@@ -1,0 +1,58 @@
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import WhySnappyTrap from '@/components/WhySnappyTrap'
+import ProductCard from '@/components/ProductCard'
+import TrustedBy from '@/components/TrustedBy'
+import Newsletter from '@/components/Newsletter'
+import Footer from '@/components/Footer'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      <Header />
+      
+      {/* Hero Section */}
+      <Hero />
+
+      {/* Why Snappy Trap Works Better */}
+      <WhySnappyTrap />
+
+      {/* Product Selection Section */}
+      <section id="shop" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#043687]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-center font-black text-[50px] text-white tracking-[-3.5px] uppercase mb-16">
+            Choose your Sink Drain Project
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <ProductCard
+              title="BATHROOMS"
+              productName="Bathroom Sink KIT"
+              description="Compact design ideal for bathroom vanities and pedestal sinks."
+              image="/images/image12.png"
+              imageAlt="Bathroom sink with drain"
+            />
+            <ProductCard
+              title="Kitchens"
+              productName="Kitchen Sink KIT"
+              description="Perfect for kitchen installations with flexible design and leak-free guarantee."
+              image="/images/image9.png"
+              imageAlt="Kitchen sink with drain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <TrustedBy />
+
+         {/* Newsletter Section */}
+         <Newsletter />
+  
+
+      {/* Footer */}
+      <Footer />
+    </main>
+  );
+}
+

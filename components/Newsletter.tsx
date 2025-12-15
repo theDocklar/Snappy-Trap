@@ -1,0 +1,70 @@
+import Image from 'next/image'
+
+export default function Newsletter() {
+  return (
+    <section className="bg-[#043687] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Image */}
+          <div className="relative">
+            <div className="relative w-full h-[500px] lg:h-[600px]">
+              <Image
+                src="/images/image9.png"
+                alt="Kitchen sink with Snappy Trap installation"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Right Side - Form Content */}
+          <div className="space-y-8">
+            <div>
+              <h2 className="font-black text-4xl lg:text-5xl text-white tracking-[-1px] uppercase mb-6">
+                SUBSCRIBE to our newsletter
+              </h2>
+              <div className="mb-8">
+                <p className="font-light text-xl lg:text-2xl text-blue-100 tracking-[0.6px] space-y-2 mb-6">
+                  <span className="block">1. Early access to new product</span>
+                  <span className="block">2. Special community discounts</span>
+                  <span className="block">3. Free resources to make your life easier</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex-1">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Name"
+                  className="w-full bg-white/90 backdrop-blur-sm border-0 text-black placeholder:text-gray-500 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div className="flex-1">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email address"
+                  className="w-full bg-white/90 backdrop-blur-sm border-0 text-black placeholder:text-gray-500 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <button className="bg-white hover:bg-blue-50 text-[#002d72] px-10 h-14 font-bold text-sm rounded-2xl tracking-[0.45px] uppercase transition-all whitespace-nowrap">
+                SUBSCRIBE
+              </button>
+            </div>
+
+            <p className="font-light text-xl lg:text-2xl text-blue-100 tracking-[0.6px]">
+              Join thousands of professionals and DIY enthusiasts getting exclusive deals
+            </p>
+
+            <p className="font-medium text-sm text-[#bedbff]">
+              No spam, unsubscribe anytime. Privacy policy protected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
