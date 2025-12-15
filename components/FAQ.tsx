@@ -33,43 +33,28 @@ export default function FAQ() {
           FAQ
         </h2>
 
-        <div className="space-y-4 max-w-4xl mx-auto">
+        <div className="space-y-6 max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-[#002D72] to-[#0056FF] rounded-3xl shadow-2xl overflow-hidden"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 text-left"
+                className="w-full flex items-center justify-between px-6 py-4 text-left"
               >
-                <p className="font-extrabold text-2xl lg:text-3xl text-white flex-1">
+                <p className="font-black text-xl lg:text-2xl text-black uppercase flex-1">
                   {faq.question}
                 </p>
                 <div className="ml-4 flex-shrink-0">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`transform transition-transform ${
-                      openIndex === index ? 'rotate-45' : ''
-                    }`}
-                  >
-                    <path
-                      d="M12 5V19M5 12H19"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <span className="text-3xl font-light text-black">
+                    {openIndex === index ? '-' : '+'}
+                  </span>
                 </div>
               </button>
               {openIndex === index && faq.answer && (
-                <div className="px-6 pb-6">
-                  <p className="font-medium text-lg text-blue-100">{faq.answer}</p>
+                <div className="px-6 pb-4 pt-2">
+                  <p className="font-medium text-lg text-[#4a5565] leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>

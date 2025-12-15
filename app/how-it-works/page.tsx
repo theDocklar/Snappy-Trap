@@ -1,32 +1,28 @@
 import Header from '@/components/Header'
-import HowItWorksHero from '@/components/HowItWorksHero'
-import InstallationSteps from '@/components/InstallationSteps'
-import InstallationGuide from '@/components/InstallationGuide'
+import HowItWorksProduct from '@/components/HowItWorksProduct'
+import CustomerReviews from '@/components/CustomerReviews'
 import FAQ from '@/components/FAQ'
-import Newsletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
+import Newsletter from '@/components/Newsletter'
 
 export default function HowItWorksPage() {
   return (
     <main className="min-h-screen">
       <Header />
       
-      {/* Hero Section */}
-      <HowItWorksHero />
+      {/* Product Section */}
+      <HowItWorksProduct />
 
-      {/* Installation Steps */}
-      <InstallationSteps />
+      {/* Customer Reviews Section */}
+      <CustomerReviews />
 
-      {/* Installation Guide & Benefits */}
-      <InstallationGuide />
+  
 
       {/* FAQ Section */}
       <FAQ />
 
-      {/* Newsletter Section */}
-      <Newsletter />
-
       {/* Footer */}
+      <Newsletter />
       <Footer />
     </main>
   )
