@@ -12,7 +12,7 @@ export default function AboutPage() {
       <AboutStory />
 
       {/* Newsletter Section */}
-      <Newsletter />
+      {/* <Newsletter /> */}
 
       {/* Footer */}
       <Footer />

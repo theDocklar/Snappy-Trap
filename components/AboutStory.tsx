@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutStory() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#043687] pt-32">
@@ -5,8 +7,13 @@ export default function AboutStory() {
       <h2 className="font-black text-5xl sm:text-6xl lg:text-[79px] text-white tracking-[-1.8px] leading-[1.2] mb-10">
               Our Story
             </h2>
-      <div className="bg-[#d9d9d9] h-[400px] sm:h-[600px] lg:h-[600px] w-ful rounded-[55px] mx-auto lg:mx-0 mb-10">
-              {/* Placeholder image - gray background as shown in Figma */}
+      <div className="relative h-[400px] sm:h-[600px] lg:h-[700px] w-full rounded-[55px] mx-auto lg:mx-0 mb-10 overflow-hidden">
+              <Image
+                src="/images/about-us-1.png"
+                alt="Our Story"
+                fill
+                className="object-cover"
+              />
             </div>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           
@@ -28,8 +35,13 @@ export default function AboutStory() {
 
           {/* Right Side - Image Placeholder */}
           <div className="relative">
-            <div className="bg-[#d9d9d9] h-[400px] sm:h-[600px] lg:h-[600px] w-full max-w-[670px] rounded-[55px] mx-auto lg:mx-0">
-              {/* Placeholder image - gray background as shown in Figma */}
+            <div className="relative h-[400px] sm:h-[600px] lg:h-[600px] w-full max-w-[670px] rounded-[55px] mx-auto lg:mx-0 overflow-hidden">
+              <Image
+                src="/images/about-us-2.png"
+                alt="About Us"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

@@ -1,16 +1,16 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import WhySnappyTrap from '@/components/WhySnappyTrap'
-import ProductCard from '@/components/ProductCard'
-import TrustedBy from '@/components/TrustedBy'
-import Newsletter from '@/components/Newsletter'
-import Footer from '@/components/Footer'
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import WhySnappyTrap from "@/components/WhySnappyTrap";
+import ProductCard from "@/components/ProductCard";
+import TrustedBy from "@/components/TrustedBy";
+import Newsletter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <Hero />
 
@@ -23,21 +23,23 @@ export default function Home() {
           <h2 className="text-center font-black text-[50px] text-white tracking-[-3.5px] uppercase mb-16">
             Choose your Sink Drain Project
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <ProductCard
               title="BATHROOMS"
               productName="Bathroom Sink KIT"
-              description="Compact design ideal for bathroom vanities and pedestal sinks."
+              sku="DK-105"
               image="/images/image12.png"
               imageAlt="Bathroom sink with drain"
+              productLink="/products/dk-105"
             />
             <ProductCard
               title="Kitchens"
               productName="Kitchen Sink KIT"
-              description="Perfect for kitchen installations with flexible design and leak-free guarantee."
+              sku="DK-100"
               image="/images/image9.png"
               imageAlt="Kitchen sink with drain"
+              productLink="/products/dk-100"
             />
           </div>
         </div>
@@ -46,13 +48,11 @@ export default function Home() {
       {/* Trusted By Section */}
       <TrustedBy />
 
-         {/* Newsletter Section */}
-         <Newsletter />
-  
+      {/* Newsletter Section */}
+      {/* <Newsletter /> */}
 
       {/* Footer */}
       <Footer />
     </main>
   );
 }
-

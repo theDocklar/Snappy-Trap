@@ -22,7 +22,7 @@ export default function HowItWorksPage() {
       <FAQ />
 
       {/* Footer */}
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </main>
   )
