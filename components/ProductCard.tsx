@@ -3,12 +3,13 @@ import Image from 'next/image'
 type ProductCardProps = {
   title: string;
   productName: string;
-  description: string;
+  sku: string;
   image: string;
   imageAlt: string;
+  productLink?: string;
 };
 
-export default function ProductCard({ title, productName, description, image, imageAlt }: ProductCardProps) {
+export default function ProductCard({ title, productName, sku, image, imageAlt, productLink = "#" }: ProductCardProps) {
   return (
     <div className="bg-white overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-4 group border-0 flex flex-col h-full min-h-[874px]">
       <div className="p-8 flex flex-col flex-1">
@@ -26,14 +27,14 @@ export default function ProductCard({ title, productName, description, image, im
           </div>
         </div>
         <div className="mt-auto">
-          <h3 className="font-black text-2xl text-black tracking-[0.6px] uppercase mb-4">
+          <h3 className="font-black text-2xl text-black tracking-[0.6px] uppercase mb-2">
             {productName}
           </h3>
-          <p className="font-medium text-lg text-[#4a5565] mb-6 leading-7">
-            {description}
+          <p className="font-medium text-lg text-[#4a5565] mb-6">
+            SKU: {sku}
           </p>
           <a 
-            href="#" 
+            href={productLink}
             className="block w-full bg-gradient-to-r from-[#0056FF] to-[#002D72] hover:from-[#0066FF] hover:to-[#003A8C] text-white font-bold text-lg py-4 rounded-2xl tracking-wide uppercase text-center transition-all"
           >
             shop now

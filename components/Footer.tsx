@@ -1,5 +1,6 @@
-import SocialIcons from './SocialIcons'
-import Image from 'next/image'
+import SocialIcons from "./SocialIcons";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,7 +13,8 @@ export default function Footer() {
               SNAPPY TRAP
             </h3>
             <p className="font-medium text-lg text-blue-100 leading-[29.25px]">
-              The leader in tool-free, leak-free drain solutions for over 15 years.
+              The leader in tool-free, leak-free drain solutions for over 15
+              years.
             </p>
           </div>
 
@@ -32,9 +34,12 @@ export default function Footer() {
             <h4 className="font-black text-xl text-white tracking-[0.5px] uppercase">
               Support
             </h4>
-            <div className="space-y-3 font-medium text-base text-[#bedbff]">
+            <div className="space-y-2 font-medium text-base text-[#bedbff]">
               <p>Installation Guide</p>
-              <p>Blogs</p>
+              <Link href={"/about"} className="cursor-pointer">
+                <p>Blogs</p>
+              </Link>
+
               <p>FAQ</p>
               <p>Warranty</p>
             </div>
@@ -46,23 +51,24 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-4 text-[#bedbff]">
-              <p className="font-bold text-base">1-800-SNAPPY-1</p>
-              <p className="font-bold text-base">info@snappytrap.com</p>
+              <p className="font-bold text-base">support@snappytrap.com</p>
               <div className="font-bold text-base">
-                <p>123 Innovation Drive</p>
-                <p>Plumbing City, PC 12345</p>
+                <p>CFX Plumbing, </p>
+                <p>700 N St Mary's Street,</p>
+                <p>Suite 1400. San Antonio. </p>
+                <p>TX, 78205</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mb-16">
+        {/* <div className="flex gap-4 mb-16">
         <SocialIcons className="w-[51px] h-[34px]" platform="YouTube" />
           <SocialIcons className="w-[39px] h-[39px]" platform="Facebook" />
           <SocialIcons className="w-[40px] h-[41px]" platform="Instagram" />
           <SocialIcons className="w-[42px] h-[42px]" platform="LinkedIn" />
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="border-t border-blue-400/30 pt-10">
@@ -71,9 +77,15 @@ export default function Footer() {
               © 2024 Snappy Trap. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm font-bold text-[#bedbff]">
-              <a href="#" className="hover:underline">Privacy Policy</a>
-              <a href="#" className="hover:underline">Terms of Service</a>
-              <a href="#" className="hover:underline">Sitemap</a>
+              <a href="#" className="hover:underline">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:underline">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:underline">
+                Sitemap
+              </a>
             </div>
           </div>
         </div>
@@ -81,4 +93,3 @@ export default function Footer() {
     </footer>
   );
 }
-

@@ -26,6 +26,9 @@ export default function Header() {
             <Link href="/how-it-works" className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors">
               How it Works
             </Link>
+            <Link href="#" className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors">
+              For Pros
+            </Link>
             <Link href="/about" className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors">
               About us
             </Link>
