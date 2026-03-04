@@ -1,30 +1,35 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 
 type FAQItem = {
-  question: string
-  answer?: string
-}
+  question: string;
+  answer?: string;
+};
 
 const faqs: FAQItem[] = [
   {
-    question: 'Will Snappy Trap fit my Sink?',
+    question: "What is the length of the Snappy Trap™ hoses?",
+    answer:
+      'Double kitchen sinks drain kit, hose length: 13". Single kitchen sinks drain kit, hose length: 9". All bathroom sinks drain kit, hose length: 9"',
   },
   {
-    question: 'Optional orientation of trap and flex pipe',
+    question: "How resistant is Snappy Trap™ to high temperature?",
+    answer: `It's safe to pour liquids down the drain up to boiling point (212° F / 100° C).`,
   },
   {
-    question: 'Is it high quality and will it meet plumbing codes',
+    question: "Can the Snappy Trap™ be installed to a floor drain?",
+    answer:
+      "Yes, it can. Depending on the preparation of the floor drain pipe, additional components may be needed. For a bare drain pipe coming from the floor, a 90 degree elbow with a marvel adapter will need to be installed to the drain pipe first.",
   },
-]
+];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#043687]">
@@ -48,13 +53,15 @@ export default function FAQ() {
                 </p>
                 <div className="ml-4 flex-shrink-0">
                   <span className="text-3xl font-light text-black">
-                    {openIndex === index ? '-' : '+'}
+                    {openIndex === index ? "-" : "+"}
                   </span>
                 </div>
               </button>
               {openIndex === index && faq.answer && (
                 <div className="px-6 pb-4 pt-2">
-                  <p className="font-medium text-lg text-[#4a5565] leading-relaxed">{faq.answer}</p>
+                  <p className="font-medium text-lg text-[#4a5565] leading-relaxed">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>
@@ -62,6 +69,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

@@ -21,46 +21,16 @@ export default function Hero() {
                 height={701}
                 className="w-full h-auto object-cover"
               />
-
-              {/* Circular Badge Overlay - Bottom Left */}
-              <div className="absolute bottom-4 left-4 flex items-center gap-4 z-10">
-                <Image
-                  src="/images/feature-icon-2.png"
-                  alt="shield"
-                  width={64}
-                  height={64}
-                  className="w-32 h-32"
-                />
-
-                <div className="text-white space-y-1 px-3 py-2">
-                  <p className="text-sm font-bold">No Build up</p>
-                  <p className="text-sm font-bold">No Odor</p>
-                  <p className="text-sm font-bold">No Cleaning</p>
-                </div>
-              </div>
             </div>
             {/* Brand Slogan - Bottom Center */}
-            <div className="mt-4 text-center">
-              <div className="flex  gap-4 mb-4">
+            <div className="-mt-12 -mb-24 w-full flex justify-center">
+              <div className="w-[85%] lg:w-[90%]">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/snappy-white.png"
                   alt="Snappy Trap"
-                  width={316}
-                  height={52}
-                  className="h-16 w-auto"
-                />
-              </div>
-              <p className="font-light text-2xl text-blue-100 tracking-[0.75px] mb-4">
-                All-In-One Drain Kits
-              </p>
-              <div className="flex items-center justify-center space-x-4">
-                <p className="font-bold text-xl text-blue-100">by</p>
-                <Image
-                  src="/images/coflex-logo.png"
-                  alt="Coflex"
-                  width={230}
-                  height={82}
-                  className="h-12 w-auto"
+                  width={2844}
+                  height={468}
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
@@ -82,69 +52,42 @@ export default function Hero() {
             </div>
 
             {/* Feature Pills - 2x2 Grid */}
-            <div className="grid grid-cols-2 gap-4 max-w-md">
-              <div className="flex items-start space-x-2 bg-white/15 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.1675 8.33332C18.5481 10.2011 18.2769 12.1428 17.3991 13.8348C16.5213 15.5268 15.0899 16.8667 13.3438 17.6311C11.5976 18.3955 9.64221 18.5381 7.8036 18.0353C5.965 17.5325 4.35435 16.4145 3.24025 14.8678C2.12616 13.3212 1.57596 11.4394 1.68141 9.53615C1.78686 7.63294 2.54159 5.8234 3.81973 4.4093C5.09787 2.9952 6.82217 2.06202 8.70508 1.76537C10.588 1.46872 12.5157 1.82654 14.1667 2.77916"
-                      stroke="white"
-                      strokeWidth="1.66667"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M7.5 9.16668L10 11.6667L18.3333 3.33334"
-                      stroke="white"
-                      strokeWidth="1.66667"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+            <div className="grid grid-cols-2 gap-4 max-w-xl">
+              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
+                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src="/images/complete-kits.png"
+                    alt="Complete kits"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
                 </div>
                 <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
                   Complete kits
                 </span>
               </div>
-              <div className="flex items-start space-x-2 bg-white/15 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="white"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.867 19.125h.008v.008h-.008v-.008Z"
-                    />
-                  </svg>
+              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
+                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src="/images/no-tools.png"
+                    alt="No tools required"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
                 </div>
                 <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
                   no tools required
                 </span>
               </div>
-              <div className="flex items-start space-x-2 bg-white/15 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
+                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
                   <Image
-                    src="/images/feature-icon-1.png"
+                    src="/images/fit-anywhere.png"
                     alt="Fits any space"
-                    width={20}
-                    height={20}
+                    width={70}
+                    height={70}
                     className="object-contain"
                   />
                 </div>
@@ -152,19 +95,15 @@ export default function Hero() {
                   Fits any space
                 </span>
               </div>
-              <div className="flex items-center space-x-2 bg-white/15 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 512 512"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                    stroke="#ffffff"
-                    strokeWidth="10"
-                  >
-                    <path d="M500.747,210.989c0-17.063-13.423-30.945-29.922-30.945H365.714v-28.132h14.066c4.662,0,8.44-3.778,8.44-8.44 s-3.778-8.44-8.44-8.44h-56.264c-4.662,0-8.44,3.778-8.44,8.44v36.571h-33.758V75.956c0-13.96,11.359-25.319,25.319-25.319 c13.96,0,25.319,11.359,25.319,25.319c0,4.662,3.778,8.44,8.44,8.44h33.758c4.662,0,8.44-3.778,8.44-8.44 C382.593,34.073,348.52,0,306.637,0c-41.883,0-75.956,34.073-75.956,75.956v104.088h-33.758v-36.571c0-4.662-3.778-8.44-8.44-8.44 H132.22c-4.662,0-8.44,3.778-8.44,8.44c0,4.662,3.778,8.44,8.44,8.44h14.066v28.132h-70.33c-4.662,0-8.44,3.778-8.44,8.44 c0,4.662,3.778,8.44,8.44,8.44h394.869c7.193,0,13.043,6.309,13.043,14.066s-5.85,14.066-13.043,14.066H41.175 c-7.193,0-13.043-6.309-13.043-14.066s5.85-14.066,13.043-14.066c4.662,0,8.44-3.778,8.44-8.44c0-4.662-3.778-8.44-8.44-8.44 c-16.499,0-29.922,13.883-29.922,30.945c0,14.468,9.653,26.645,22.646,30.016c3.628,108.662,85.631,197.8,191.156,212.567v27.484 C225.055,498.117,238.938,512,256,512c17.063,0,30.945-13.883,30.945-30.945v-27.508c40.063-5.656,78.171-22.179,109.664-47.938 c38.972-31.875,66.211-76.386,76.7-125.335c0.976-4.557-1.926-9.044-6.485-10.021c-4.545-0.968-9.043,1.926-10.021,6.485 C436.675,370.676,352.226,438.857,256,438.857c-110.41,0-200.732-87.585-205.176-196.923h420.001 C487.324,241.934,500.747,228.052,500.747,210.989z M180.044,180.044h-16.879v-28.132h16.879V180.044z M264.44,75.956v104.088 H247.56V75.956c0-32.574,26.503-59.077,59.077-59.077c29.709,0,54.368,22.046,58.476,50.637h-17.126 c-3.922-19.238-20.973-33.758-41.35-33.758C283.369,33.758,264.44,52.688,264.44,75.956z M348.835,180.044h-16.879v-28.132h16.879 V180.044z M241.934,455.278c4.653,0.293,9.34,0.458,14.066,0.458c4.701,0,9.393-0.153,14.066-0.451v25.77 c0,7.756-6.309,14.066-14.066,14.066s-14.066-6.309-14.066-14.066V455.278z" />
-                  </svg>
+              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
+                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src="/images/kitchen-sink.png"
+                    alt="Kitchen & bath"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
                 </div>
                 <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
                   kitchen & bath
@@ -189,7 +128,7 @@ export default function Hero() {
             </div>
 
             {/* Reviews & Warranty */}
-            <div className="flex items-center space-x-8 text-blue-100">
+            <div className="flex items-center space-x-14 text-blue-100">
               <div className="flex items-center space-x-2">
                 <svg
                   width="122"
@@ -234,14 +173,14 @@ export default function Hero() {
                 </svg>
                 <span className="font-bold text-2xl">Reviews</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-6 w-80">
                 <svg
                   width="48"
                   height="42"
                   viewBox="0 0 48 42"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-7"
+                  className="w-14 h-9"
                 >
                   <path
                     d="M34.6908 22.6468C34.6908 30.8178 28.2696 34.9033 20.6377 37.2728C20.238 37.3935 19.8039 37.3877 19.4085 37.2565C11.7582 34.9033 5.33704 30.8178 5.33704 22.6468V11.2074C5.33704 10.774 5.53032 10.3584 5.87438 10.0519C6.21844 9.74541 6.68508 9.57324 7.17164 9.57324C10.8409 9.57324 15.4274 7.61221 18.6196 5.12823C19.0083 4.83244 19.5027 4.66992 20.0139 4.66992C20.5251 4.66992 21.0195 4.83244 21.4082 5.12823C24.6188 7.62855 29.1869 9.57324 32.8561 9.57324C33.3427 9.57324 33.8094 9.74541 34.1534 10.0519C34.4975 10.3584 34.6908 10.774 34.6908 11.2074V22.6468Z"
@@ -258,7 +197,7 @@ export default function Hero() {
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex items-center space-x-6 mt-8">
+            <div className="flex items-center space-x-8 mt-8">
               <a
                 href="https://youtube.com/@snappytrap"
                 target="_blank"

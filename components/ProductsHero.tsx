@@ -26,7 +26,7 @@ export default function ProductsHero({
           <div className="flex justify-center gap-4">
             <button
               onClick={() => onFilterChange("Bathroom")}
-              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all ${
+              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl ${
                 activeFilter === "Bathroom"
                   ? "bg-white/20 border-white/30"
                   : "bg-white/15 border-white/20"
@@ -38,7 +38,7 @@ export default function ProductsHero({
             </button>
             <button
               onClick={() => onFilterChange("Kitchen")}
-              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all ${
+              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl ${
                 activeFilter === "Kitchen"
                   ? "bg-white/20 border-white/30"
                   : "bg-white/15 border-white/20"
@@ -57,15 +57,34 @@ export default function ProductsHero({
             </p>
             <div className="flex flex-wrap justify-center items-center gap-10 max-w-4xl mx-auto">
               {[
-                { name: "Home Depot", logo: "/images/home-depot-2.jpg" },
-                { name: "Amazon", logo: "/images/amazon-logo.webp" },
-                { name: "Ace Hardware", logo: "/images/ace-3.png" },
-                { name: "Lowes", logo: "/images/lowes-logo-2.png" },
-                { name: "Menards", logo: "/images/Menards.jpg" },
+                {
+                  name: "Home Depot",
+                  logo: "/images/home-depot-2.jpg",
+                  url: "https://www.homedepot.com/s/snappy%2520trap?NCNI-5",
+                },
+                {
+                  name: "Amazon",
+                  logo: "/images/amazon-logo.webp",
+                  url: "https://www.amazon.com/s?k=snappy+trap",
+                },
+                {
+                  name: "Ace Hardware",
+                  logo: "/images/ace-3.png",
+                  url: "https://www.acehardware.com/search?query=snappy+trap",
+                },
+                {
+                  name: "Lowes",
+                  logo: "/images/lowes-logo-2.png",
+                  url: "https://www.lowes.com/search?searchTerm=snappy+trap",
+                },
+                { name: "Menards", logo: "/images/Menards.jpg", url: "#" },
               ].map((retailer) => (
-                <div
+                <a
                   key={retailer.name}
-                  className="rounded-2xl w-32 h-20 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-lg relative"
+                  href={retailer.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl w-32 h-20 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-lg relative cursor-pointer"
                 >
                   <Image
                     src={retailer.logo}
@@ -73,7 +92,7 @@ export default function ProductsHero({
                     fill
                     className="object-cover"
                   />
-                </div>
+                </a>
               ))}
             </div>
           </div>
