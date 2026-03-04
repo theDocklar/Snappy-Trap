@@ -27,17 +27,15 @@ export default function ProductCard({ title, productName, sku, image, imageAlt, 
           </div>
         </div>
         <div className="mt-auto">
-          <h3 className="font-black text-2xl text-black tracking-[0.6px] uppercase mb-2">
+          <h3 className="font-black text-2xl text-black tracking-[0.6px] uppercase mb-6">
             {productName}
           </h3>
-          <p className="font-medium text-lg text-[#4a5565] mb-6">
-            SKU: {sku}
-          </p>
+          
           <a 
             href={productLink}
             className="block w-full bg-gradient-to-r from-[#0056FF] to-[#002D72] hover:from-[#0066FF] hover:to-[#003A8C] text-white font-bold text-lg py-4 rounded-2xl tracking-wide uppercase text-center transition-all"
           >
-            shop now
+            view more
           </a>
         </div>
       </div>
