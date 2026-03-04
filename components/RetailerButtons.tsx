@@ -3,7 +3,7 @@ import Image from "next/image";
 type Retailer = {
   name: string;
   logo: string;
-  //url: string;
+  url: string;
   bgColor: string;
   hoverColor: string;
 };
@@ -19,35 +19,35 @@ const defaultRetailers: Retailer[] = [
   {
     name: "Home Depot",
     logo: "/images/home-depot.jpg",
-    //url: "#",
+    url: "https://www.homedepot.com/s/snappy%2520trap?NCNI-5",
     bgColor: "bg-[#F96302]",
     hoverColor: "hover:bg-[#E05500]",
   },
   {
     name: "Lowes",
     logo: "/images/lowes-logo.png",
-    //url: "#",
+    url: "https://www.lowes.com/search?searchTerm=snappy+trap",
     bgColor: "bg-[#004990]",
     hoverColor: "hover:bg-[#003670]",
   },
   {
     name: "Amazon",
     logo: "/images/amazon-logo.png",
-    //url: "#",
+    url: "https://www.amazon.com/s?k=snappy+trap",
     bgColor: "bg-[#232F3E]",
     hoverColor: "hover:bg-[#131921]",
   },
   {
     name: "Ace Hardware",
     logo: "/images/ace-hardware-logo.png",
-    //url: "#",
+    url: "https://www.acehardware.com/search?query=snappy+trap",
     bgColor: "bg-[#CE0E2D]",
     hoverColor: "hover:bg-[#A00B24]",
   },
   {
     name: "Menards",
     logo: "/images/mernards-logo.png",
-    //url: "#",
+    url: "#",
     bgColor: "bg-[#1D4F91]",
     hoverColor: "hover:bg-[#163A6D]",
   },
@@ -75,7 +75,7 @@ export default function RetailerButtons({
         {retailers.map((retailer) => (
           <a
             key={retailer.name}
-            //href={retailer.url}
+            href={retailer.url}
             target="_blank"
             rel="noopener noreferrer"
             className={`${retailer.bgColor} ${retailer.hoverColor} rounded-lg px-6 py-4 h-16 flex items-center justify-center transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg`}
