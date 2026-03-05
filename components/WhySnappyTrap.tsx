@@ -33,7 +33,7 @@ const features = [
     icon: (
       <Image
         src="/images/no-cleaning.png"
-        alt="No odor icon"
+        alt="No cleaning icon"
         width={130}
         height={130}
         className="object-contain"
@@ -41,7 +41,7 @@ const features = [
     ),
     title: "No Cleaning",
     description:
-      "Traditional corrugated hoses require periodic residue clean-out. Snappy Trap is maintenance free!",
+      "Traditional corrugated hoses require periodic residue clean-out. SnappyTrap is maintenance free!",
   },
 ];
 
@@ -53,20 +53,20 @@ export default function WhySnappyTrap() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="font-black text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-4">
-            Why Snappy Trap Works Better
+            Why SnappyTrap Works Better
           </h2>
           <p className="font-light text-xl lg:text-2xl text-[#4a5565] tracking-[0.6px] max-w-3xl mx-auto">
             Experience the difference with our patented technology and
-            innovative design
+            innovative design.
           </p>
         </div>
 
-        <div className="w-64 h-48 mx-auto mb-8 rounded-full overflow-hidden flex items-center justify-center">
+        <div className="w-[600px] h-[450px] mx-auto mb-8 rounded-full overflow-hidden flex items-center justify-center">
           <Image
             src="/images/flexible-hose.png"
             alt="flexible hose"
-            width={320}
-            height={240}
+            width={600}
+            height={450}
             className="object-contain"
           />
         </div>

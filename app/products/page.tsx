@@ -74,9 +74,6 @@ export default function ProductsPage() {
       {/* FAQ Section */}
       <FAQ />
 
-      {/* Newsletter Section */}
-      {/* <Newsletter /> */}
-
       {/* Footer */}
       <Footer />
     </main>

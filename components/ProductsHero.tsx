@@ -16,7 +16,7 @@ export default function ProductsHero({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h1 className="font-black text-5xl lg:text-7xl text-white tracking-[-1.8px] mb-6">
-            Find the Right Snappy Trap for your Project
+            Find the Right SnappyTrap for Your Project
           </h1>
           <p className="font-light text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-12">
             Sink Drains Made Easy
@@ -53,7 +53,7 @@ export default function ProductsHero({
           {/* Available Retailers */}
           <div className="mt-14">
             <p className="font-bold text-base text-white/90 tracking-wide mb-6 uppercase">
-              Available At these retailers:
+              Available at these retailers:
             </p>
             <div className="flex flex-wrap justify-center items-center gap-10 max-w-4xl mx-auto">
               {[
@@ -77,7 +77,11 @@ export default function ProductsHero({
                   logo: "/images/lowes-logo-2.png",
                   url: "https://www.lowes.com/search?searchTerm=snappy+trap",
                 },
-                { name: "Menards", logo: "/images/Menards.jpg", url: "#" },
+                {
+                  name: "Menards",
+                  logo: "/images/Menards.jpg",
+                  url: "https://www.menards.com/main/search.html?search=snappy+trap",
+                },
               ].map((retailer) => (
                 <a
                   key={retailer.name}

@@ -31,7 +31,7 @@ export default function Home() {
               sku="DK-105"
               image="/images/image12.png"
               imageAlt="Bathroom sink with drain"
-              productLink="/products/dk-105"
+              productLink="/products"
             />
             <ProductCard
               title="Kitchens"
@@ -39,7 +39,7 @@ export default function Home() {
               sku="DK-100"
               image="/images/image9.png"
               imageAlt="Kitchen sink with drain"
-              productLink="/products/dk-100"
+              productLink="/products"
             />
           </div>
         </div>

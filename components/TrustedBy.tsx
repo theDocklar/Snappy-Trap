@@ -36,11 +36,11 @@ export default function TrustedBy() {
           {/* Left Side - Takes 2/3 of width */}
           <div className="lg:col-span-2">
             <h2 className="font-black text-4xl lg:text-5xl text-white tracking-[-1.2px] uppercase mb-8">
-              TRUSTED BY HOMEOWNERS & PROFESSIONALS FOR OVER 15 YEARS
+              Trusted by Homeowners & Professionals for Over 15 Years
             </h2>
 
             <p className="font-medium text-lg lg:text-xl text-blue-100 tracking-[0.6px] mb-8 leading-relaxed">
-              Snappy Trap All-In-One Drain Kits have been making sink drain
+              SnappyTrap All-In-One Drain Kits have been making sink drain
               installations faster, easier and more secure for over 15 years.
               Patented flexible, smooth-interior pipe and tool-free design. Kits
               for any type of sink. Accommodates multiple wall connection types.

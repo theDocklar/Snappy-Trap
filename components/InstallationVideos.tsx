@@ -6,19 +6,19 @@ export default function InstallationVideos() {
       id: "-MKiK3nnCng",
       title: "Double Sink with Waste Disposal",
       description:
-        "How to accommodate the Snappy Trap when installing to a waste disposal",
+        "How to accommodate the Snappy Trap when installing to a waste disposal.",
     },
     {
       id: "djtcRdJZG2s",
       title: "Double Sink Installation",
       description:
-        "Different ways to accommodate the Snappy Trap, save more space under your double sink",
+        "Different ways to accommodate the Snappy Trap, save more space under your double sink.",
     },
     {
       id: "yToNfqJpprA",
       title: "All-in-One Drain Kit",
       description:
-        "How to install All-in-One Drain Kit for Double Bowl for Kitchen Sinks",
+        "How to install All-in-One Drain Kit for Double Bowl for Kitchen Sinks.",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function InstallationVideos() {
             Installation Tips
           </h2>
           <p className="font-light text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert guidance to make your installation smooth and hassle-free
+            Expert guidance to make your installation smooth and hassle-free.
           </p>
         </div>
 

@@ -11,7 +11,7 @@ export default function VideoShowcase() {
     {
       id: "341SdheqFw4",
       title: "How to Cut the Length of the Snappy Trap Hoses",
-      description: "Simple wat to cut the length of the hoses",
+      description: "Simple way to cut the length of the hoses.",
     },
   ];
 
@@ -21,10 +21,10 @@ export default function VideoShowcase() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-black text-4xl lg:text-5xl text-[#043687] tracking-[-1.2px] mb-4 uppercase">
-            How to cut the hose
+            How to Cut the Hose
           </h2>
           <p className="font-light text-xl text-gray-600 max-w-3xl mx-auto">
-            Watch our demonstration videos
+            Watch our demonstration videos.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Newsletter() {
   return (
@@ -21,13 +21,15 @@ export default function Newsletter() {
           <div className="space-y-8">
             <div>
               <h2 className="font-black text-4xl lg:text-5xl text-white tracking-[-1px] uppercase mb-6">
-                SUBSCRIBE to our newsletter
+                Subscribe to Our Newsletter
               </h2>
               <div className="mb-8">
                 <p className="font-light text-xl lg:text-2xl text-blue-100 tracking-[0.6px] space-y-2 mb-6">
-                  <span className="block">1. Early access to new product</span>
-                  <span className="block">2. Special community discounts</span>
-                  <span className="block">3. Free resources to make your life easier</span>
+                  <span className="block">1. Early access to new product.</span>
+                  <span className="block">2. Special community discounts.</span>
+                  <span className="block">
+                    3. Free resources to make your life easier.
+                  </span>
                 </p>
               </div>
             </div>
@@ -55,7 +57,8 @@ export default function Newsletter() {
             </div>
 
             <p className="font-light text-xl lg:text-2xl text-blue-100 tracking-[0.6px]">
-              Join thousands of professionals and DIY enthusiasts getting exclusive deals
+              Join thousands of professionals and DIY enthusiasts getting
+              exclusive deals.
             </p>
 
             <p className="font-medium text-sm text-[#bedbff]">
@@ -67,4 +70,3 @@ export default function Newsletter() {
     </section>
   );
 }
-

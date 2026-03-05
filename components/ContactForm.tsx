@@ -144,7 +144,7 @@ export default function ContactForm() {
           <div className="space-y-8">
             <div>
               <h1 className="font-black text-4xl lg:text-5xl text-[#002D72] tracking-[-1px] uppercase mb-6">
-                GET IN TOUCH
+                Get in Touch
               </h1>
               <p className="font-light text-xl text-[#4a5565] leading-relaxed">
                 Have a question about our products or installation? We're here
@@ -185,7 +185,7 @@ export default function ContactForm() {
                     <br />
                     700 N St Mary's Street,
                     <br />
-                    Suite 1400. San Antonio. TX, 78205
+                    Suite 1400, San Antonio, TX, 78205
                   </p>
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function ContactForm() {
                   className="font-medium text-sm text-[#4a5565] cursor-pointer"
                 >
                   Subscribe to our newsletter for early access to new products,
-                  special discounts, and free resources
+                  special discounts, and free resources.
                 </label>
               </div>
 

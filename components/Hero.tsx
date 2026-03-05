@@ -42,7 +42,7 @@ export default function Hero() {
               <h1 className="font-black text-5xl lg:text-7xl text-white tracking-[-1.8px] leading-tight">
                 Fast, Flexible,
                 <br />
-                Flawless,
+                Flawless
                 <br />
                 Installation
               </h1>
@@ -78,7 +78,7 @@ export default function Hero() {
                   />
                 </div>
                 <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
-                  no tools required
+                  No tools required
                 </span>
               </div>
               <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">

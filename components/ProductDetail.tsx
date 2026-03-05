@@ -339,7 +339,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   logo: "/images/lowes-logo-2.png",
                   url: "https://www.lowes.com/search?searchTerm=snappy+trap",
                 },
-                { name: "Menards", logo: "/images/Menards.jpg", url: "#" },
+                {
+                  name: "Menards",
+                  logo: "/images/Menards.jpg",
+                  url: "https://www.menards.com/main/search.html?search=snappy+trap",
+                },
               ].map((retailer) => (
                 <a
                   key={retailer.name}

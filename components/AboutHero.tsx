@@ -7,11 +7,11 @@ export default function AboutHero() {
             About Us
           </h1>
           <p className="font-light text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] max-w-3xl mx-auto">
-            Leading the industry in tool-free, leak-free drain solutions for over 15 years
+            Leading the industry in tool-free, leak-free drain solutions for
+            over 15 years.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
