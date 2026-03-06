@@ -1,6 +1,6 @@
 export default function HowItWorksHero() {
   return (
-    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-20 lg:py-24 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-16 sm:py-20 lg:py-24 pt-24 sm:pt-28 lg:pt-32 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
@@ -12,11 +12,11 @@ export default function HowItWorksHero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="font-black text-5xl lg:text-6xl text-white tracking-[-1.8px] mb-6 animate-fade-in">
+          <h1 className="font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-[-1.8px] mb-4 sm:mb-6 animate-fade-in">
             How It Works
           </h1>
           <p
-            className="font-medium text-base lg:text-lg text-white/90 max-w-2xl mx-auto animate-fade-in"
+            className="font-medium text-base sm:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto animate-fade-in px-2"
             style={{ animationDelay: "0.4s" }}
           >
             Watch our step-by-step videos to see how easy it is to install
