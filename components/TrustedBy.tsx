@@ -30,7 +30,7 @@ const benefits = [
 
 export default function TrustedBy() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-[#043687] relative overflow-hidden">
+    <section className="pt-12 pb-2 sm:pt-16 sm:pb-4 lg:pt-20 lg:pb-16 bg-[#043687] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12 lg:mb-16">
           {/* Left Side - Takes 2/3 of width */}
@@ -79,7 +79,7 @@ export default function TrustedBy() {
 
         {/* Testimonials - Cascading/Overlapping Style */}
         <div className="relative">
-          <div className="relative min-h-[900px] sm:min-h-[700px] md:min-h-[500px] lg:min-h-[400px]">
+          <div className="relative min-h-[560px] sm:min-h-[540px] md:min-h-[450px] lg:min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -87,8 +87,8 @@ export default function TrustedBy() {
                   index === 0
                     ? "w-full sm:w-[90%] md:w-[45%] left-0 top-0 z-[30]"
                     : index === 1
-                      ? "w-full sm:w-[88%] md:w-[42%] left-0 md:left-[38%] top-[280px] sm:top-[220px] md:top-[100px] z-[40]"
-                      : "w-full sm:w-[85%] md:w-[38%] left-0 md:left-[65%] top-[560px] sm:top-[440px] md:top-[200px] z-[50]"
+                      ? "w-full sm:w-[88%] md:w-[42%] left-0 md:left-[38%] top-[190px] sm:top-[180px] md:top-[100px] z-[40]"
+                      : "w-full sm:w-[85%] md:w-[38%] left-0 md:left-[65%] top-[380px] sm:top-[360px] md:top-[200px] z-[50]"
                 }`}
               >
                 <div className="flex items-start space-x-3 sm:space-x-4">
