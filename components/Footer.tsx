@@ -4,59 +4,79 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#043687] py-16">
+    <footer className="bg-[#043687] py-12 sm:py-14 lg:py-16 xl:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-14 lg:mb-16">
           {/* Company Info */}
-          <div className="space-y-4">
-            <h3 className="font-black text-[30px] leading-[36px] text-white tracking-[0.75px] italic">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="font-black text-2xl sm:text-3xl lg:text-[30px] leading-tight text-white tracking-[0.75px] italic">
               SnappyTrap
             </h3>
-            <p className="font-medium text-lg text-blue-100 leading-[29.25px]">
+            <p className="font-medium text-base sm:text-lg lg:text-xl text-blue-100 leading-relaxed">
               The leader in tool-free, leak-free drain solutions for over 15
               years.
             </p>
           </div>
 
           {/* Products */}
-          <div className="space-y-3">
-            <h4 className="font-black text-xl text-white tracking-[0.5px] uppercase">
+          <div className="space-y-3 sm:space-y-4">
+            <h4 className="font-black text-lg sm:text-xl lg:text-2xl text-white tracking-[0.5px] uppercase">
               Products
             </h4>
-            <div className="space-y-3 font-medium text-base text-[#bedbff]">
-              <Link href={"/products"} className="cursor-pointer">
+            <div className="space-y-2 sm:space-y-3 font-medium text-sm sm:text-base lg:text-lg text-[#bedbff]">
+              <Link
+                href={"/products"}
+                className="cursor-pointer block hover:text-white transition-colors py-1"
+              >
                 <p>Bathroom Kits</p>
               </Link>
-              <Link href={"/products"} className="cursor-pointer">
+              <Link
+                href="/products"
+                className="cursor-pointer block hover:text-white transition-colors py-1"
+              >
                 <p>Kitchen Kits</p>
               </Link>
             </div>
           </div>
 
           {/* Support */}
-          <div className="space-y-3">
-            <h4 className="font-black text-xl text-white tracking-[0.5px] uppercase">
+          <div className="space-y-3 sm:space-y-4">
+            <h4 className="font-black text-lg sm:text-xl lg:text-2xl text-white tracking-[0.5px] uppercase">
               Support
             </h4>
-            <div className="space-y-3 font-medium text-base text-[#bedbff]">
-              <p>Installation Guide</p>
-              <Link href={"/about"} className="cursor-pointer">
+            <div className="space-y-2 sm:space-y-3 font-medium text-sm sm:text-base lg:text-lg text-[#bedbff]">
+              <p className="hover:text-white transition-colors cursor-pointer py-1">
+                Installation Guide
+              </p>
+              <Link
+                href={"/about"}
+                className="cursor-pointer block hover:text-white transition-colors py-1"
+              >
                 <p>Blogs</p>
               </Link>
 
-              <p>FAQ</p>
-              <p>Warranty</p>
+              <p className="hover:text-white transition-colors cursor-pointer py-1">
+                FAQ
+              </p>
+              <p className="hover:text-white transition-colors cursor-pointer py-1">
+                Warranty
+              </p>
             </div>
           </div>
 
           {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="font-black text-xl text-white tracking-[0.5px] uppercase">
+          <div className="space-y-3 sm:space-y-4">
+            <h4 className="font-black text-lg sm:text-xl lg:text-2xl text-white tracking-[0.5px] uppercase">
               Contact
             </h4>
-            <div className="space-y-4 text-[#bedbff]">
-              <p className="font-bold text-base">support@snappytrap.com</p>
-              <div className="font-bold text-base">
+            <div className="space-y-3 sm:space-y-4 text-[#bedbff]">
+              <a
+                href="mailto:support@snappytrap.com"
+                className="font-bold text-sm sm:text-base lg:text-lg hover:text-white transition-colors block"
+              >
+                support@snappytrap.com
+              </a>
+              <div className="font-bold text-sm sm:text-base lg:text-lg leading-relaxed">
                 <p>CFX Plumbing, </p>
                 <p>700 N St Mary's Street,</p>
                 <p>Suite 1400, San Antonio, </p>
@@ -67,19 +87,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-400/30 pt-10">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-bold text-sm text-[#bedbff] mb-4 md:mb-0">
+        <div className="border-t border-blue-400/30 pt-8 sm:pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
+            <p className="font-bold text-xs sm:text-sm text-[#bedbff] text-center md:text-left">
               © 2024 SnappyTrap. All rights reserved.
             </p>
-            <div className="flex space-x-8 text-sm font-bold text-[#bedbff]">
-              <a href="#" className="hover:underline">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-xs sm:text-sm font-bold text-[#bedbff]">
+              <a href="#" className="hover:text-white transition-colors py-1">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:text-white transition-colors py-1">
                 Terms of Service
               </a>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:text-white transition-colors py-1">
                 Sitemap
               </a>
             </div>

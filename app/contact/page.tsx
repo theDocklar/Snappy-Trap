@@ -8,12 +8,12 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] pt-32 pb-12 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="font-black text-5xl lg:text-6xl text-white tracking-[-2px] uppercase mb-6">
+          <h1 className="font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-[-2px] uppercase mb-4 sm:mb-6">
             Contact Us
           </h1>
-          <p className="font-light text-xl lg:text-2xl text-blue-100 tracking-[0.6px] max-w-3xl mx-auto">
+          <p className="font-light text-base sm:text-lg lg:text-2xl text-blue-100 tracking-[0.6px] max-w-3xl mx-auto px-2">
             We're here to help with any questions about SnappyTrap products,
             installation, or support
           </p>

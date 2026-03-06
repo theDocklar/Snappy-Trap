@@ -116,30 +116,30 @@ const values = [
 
 export default function AboutValues() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-black text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="font-black text-3xl sm:text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-3 sm:mb-4">
             Our Values
           </h2>
-          <p className="font-light text-xl lg:text-2xl text-[#4a5565] tracking-[0.6px] max-w-3xl mx-auto">
+          <p className="font-light text-lg sm:text-xl lg:text-2xl text-[#4a5565] tracking-[0.6px] max-w-3xl mx-auto px-4">
             The principles that guide everything we do.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {values.map((value, index) => (
             <div
               key={index}
-              className="text-center group hover:transform hover:scale-105 transition-all duration-300"
+              className="text-center group hover:transform hover:scale-105 transition-all duration-300 px-2 sm:px-0"
             >
-              <div className="w-24 h-24 bg-gradient-to-br from-[#002D72] to-[#0056FF] rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl group-hover:shadow-3xl transition-shadow">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-[#002D72] to-[#0056FF] rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-2xl group-hover:shadow-3xl transition-shadow">
                 {value.icon}
               </div>
-              <h3 className="font-black text-xl lg:text-2xl text-black tracking-[0.6px] uppercase mb-4">
+              <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-black tracking-[0.6px] uppercase mb-3 sm:mb-4">
                 {value.title}
               </h3>
-              <p className="font-medium text-base lg:text-lg text-[#4a5565] leading-relaxed">
+              <p className="font-medium text-sm sm:text-base lg:text-lg text-[#4a5565] leading-relaxed">
                 {value.description}
               </p>
             </div>

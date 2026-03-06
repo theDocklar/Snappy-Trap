@@ -18,13 +18,16 @@ export default function Home() {
       <WhySnappyTrap />
 
       {/* Product Selection Section */}
-      <section id="shop" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#043687]">
+      <section
+        id="shop"
+        className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#043687]"
+      >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-center font-black text-[50px] text-white tracking-[-3.5px] uppercase mb-16">
+          <h2 className="text-center font-black text-3xl sm:text-4xl md:text-5xl lg:text-[50px] text-white tracking-[-3.5px] uppercase mb-10 sm:mb-12 lg:mb-16 leading-tight">
             Choose your Sink Drain Project
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <ProductCard
               title="BATHROOMS"
               productName="Bathroom Sink KIT"

@@ -137,16 +137,16 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
           {/* Left Side - Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <h1 className="font-black text-4xl lg:text-5xl text-[#002D72] tracking-[-1px] uppercase mb-6">
+              <h1 className="font-black text-3xl sm:text-4xl lg:text-5xl text-[#002D72] tracking-[-1px] uppercase mb-4 sm:mb-6">
                 Get in Touch
               </h1>
-              <p className="font-light text-xl text-[#4a5565] leading-relaxed">
+              <p className="font-light text-base sm:text-lg lg:text-xl text-[#4a5565] leading-relaxed">
                 Have a question about our products or installation? We're here
                 to help! Send us a message and we'll respond as quickly as
                 possible.
@@ -154,33 +154,33 @@ export default function ContactForm() {
             </div>
 
             {/* Contact Details */}
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail size={24} className="text-white" />
+            <div className="space-y-5 sm:space-y-6">
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail size={20} className="sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-[#002D72] uppercase mb-1">
+                  <h3 className="font-bold text-base sm:text-lg text-[#002D72] uppercase mb-1">
                     Email Us
                   </h3>
                   <a
                     href="mailto:support@snappytrap.com"
-                    className="font-light text-lg text-[#4a5565] hover:text-[#0056FF] transition-colors"
+                    className="font-light text-sm sm:text-base lg:text-lg text-[#4a5565] hover:text-[#0056FF] transition-colors break-all"
                   >
                     support@snappytrap.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin size={24} className="text-white" />
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin size={20} className="sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-[#002D72] uppercase mb-1">
+                  <h3 className="font-bold text-base sm:text-lg text-[#002D72] uppercase mb-1">
                     Visit Us
                   </h3>
-                  <p className="font-light text-lg text-[#4a5565]">
+                  <p className="font-light text-sm sm:text-base lg:text-lg text-[#4a5565]">
                     CFX Plumbing,
                     <br />
                     700 N St Mary's Street,
@@ -192,24 +192,24 @@ export default function ContactForm() {
             </div>
 
             {/* Additional Info */}
-            <div className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] rounded-3xl p-8">
-              <h3 className="font-black text-2xl text-white uppercase mb-4">
+            <div className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] rounded-2xl sm:rounded-3xl p-6 sm:p-8">
+              <h3 className="font-black text-xl sm:text-2xl text-white uppercase mb-3 sm:mb-4">
                 Need Immediate Help?
               </h3>
-              <p className="font-light text-lg text-blue-100 mb-6">
+              <p className="font-light text-base sm:text-lg text-blue-100 mb-5 sm:mb-6">
                 Check out our FAQ section or installation guides for quick
                 answers to common questions.
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href="/how-it-works"
-                  className="bg-white hover:bg-blue-50 text-[#002D72] px-6 py-3 font-bold text-sm rounded-2xl uppercase transition-all"
+                  className="bg-white hover:bg-blue-50 text-[#002D72] px-5 sm:px-6 py-3 font-bold text-sm rounded-2xl uppercase transition-all text-center"
                 >
                   How It Works
                 </a>
                 <a
                   href="/products"
-                  className="border-2 border-white text-white hover:bg-white/10 px-6 py-3 font-bold text-sm rounded-2xl uppercase transition-all"
+                  className="border-2 border-white text-white hover:bg-white/10 px-5 sm:px-6 py-3 font-bold text-sm rounded-2xl uppercase transition-all text-center"
                 >
                   View Products
                 </a>
@@ -218,25 +218,25 @@ export default function ContactForm() {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
-            <h2 className="font-black text-2xl text-[#002D72] uppercase mb-6">
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 border border-gray-100">
+            <h2 className="font-black text-xl sm:text-2xl text-[#002D72] uppercase mb-5 sm:mb-6">
               Send Us a Message
             </h2>
 
             {submitSuccess && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-2xl">
-                <p className="font-medium text-green-800">
+              <div className="mb-5 sm:mb-6 p-3 sm:p-4 bg-green-50 border border-green-200 rounded-xl sm:rounded-2xl">
+                <p className="font-medium text-sm sm:text-base text-green-800">
                   Thank you! Your message has been sent successfully. We'll get
                   back to you soon.
                 </p>
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block font-bold text-sm text-[#002D72] uppercase mb-2"
+                  className="block font-bold text-xs sm:text-sm text-[#002D72] uppercase mb-2"
                 >
                   Name *
                 </label>
@@ -247,7 +247,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
+                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-12 sm:h-14 text-base sm:text-lg font-medium rounded-xl sm:rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
                   placeholder="Your name"
                 />
               </div>
@@ -255,7 +255,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block font-bold text-sm text-[#002D72] uppercase mb-2"
+                  className="block font-bold text-xs sm:text-sm text-[#002D72] uppercase mb-2"
                 >
                   Email Address *
                 </label>
@@ -266,11 +266,11 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className={`w-full bg-gray-50 border ${errors.email ? "border-red-500" : "border-gray-200"} text-black placeholder:text-gray-400 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent`}
+                  className={`w-full bg-gray-50 border ${errors.email ? "border-red-500" : "border-gray-200"} text-black placeholder:text-gray-400 h-12 sm:h-14 text-base sm:text-lg font-medium rounded-xl sm:rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent`}
                   placeholder="your.email@example.com"
                 />
                 {errors.email && (
-                  <p className="mt-2 text-sm text-red-600 font-medium">
+                  <p className="mt-2 text-xs sm:text-sm text-red-600 font-medium">
                     {errors.email}
                   </p>
                 )}
@@ -279,7 +279,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block font-bold text-sm text-[#002D72] uppercase mb-2"
+                  className="block font-bold text-xs sm:text-sm text-[#002D72] uppercase mb-2"
                 >
                   Phone Number (Optional)
                 </label>
@@ -289,7 +289,7 @@ export default function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
+                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-12 sm:h-14 text-base sm:text-lg font-medium rounded-xl sm:rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
                   placeholder="(555) 123-4567"
                 />
               </div>
@@ -297,7 +297,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block font-bold text-sm text-[#002D72] uppercase mb-2"
+                  className="block font-bold text-xs sm:text-sm text-[#002D72] uppercase mb-2"
                 >
                   Subject *
                 </label>
@@ -308,7 +308,7 @@ export default function ContactForm() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-14 text-lg font-medium rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
+                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 h-12 sm:h-14 text-base sm:text-lg font-medium rounded-xl sm:rounded-2xl px-4 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent"
                   placeholder="How can we help?"
                 />
               </div>
@@ -316,7 +316,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block font-bold text-sm text-[#002D72] uppercase mb-2"
+                  className="block font-bold text-xs sm:text-sm text-[#002D72] uppercase mb-2"
                 >
                   Message *
                 </label>
@@ -326,24 +326,24 @@ export default function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 text-lg font-medium rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent resize-none"
+                  rows={5}
+                  className="w-full bg-gray-50 border border-gray-200 text-black placeholder:text-gray-400 text-base sm:text-lg font-medium rounded-xl sm:rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0056FF] focus:border-transparent resize-none"
                   placeholder="Tell us more about your question or project..."
                 />
               </div>
 
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-2 sm:space-x-3">
                 <input
                   type="checkbox"
                   id="subscribe"
                   name="subscribe"
                   checked={formData.subscribe}
                   onChange={handleChange}
-                  className="w-5 h-5 mt-1 border-2 border-gray-300 rounded focus:ring-2 focus:ring-[#0056FF] text-[#0056FF]"
+                  className="w-4 h-4 sm:w-5 sm:h-5 mt-1 border-2 border-gray-300 rounded focus:ring-2 focus:ring-[#0056FF] text-[#0056FF]"
                 />
                 <label
                   htmlFor="subscribe"
-                  className="font-medium text-sm text-[#4a5565] cursor-pointer"
+                  className="font-medium text-xs sm:text-sm text-[#4a5565] cursor-pointer"
                 >
                   Subscribe to our newsletter for early access to new products,
                   special discounts, and free resources.
@@ -351,18 +351,20 @@ export default function ContactForm() {
               </div>
 
               {/* reCAPTCHA */}
-              <div>
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey={
-                    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ||
-                    "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                  }
-                  onChange={handleCaptchaChange}
-                  theme="light"
-                />
+              <div className="flex justify-center sm:justify-start">
+                <div className="transform scale-90 sm:scale-100 origin-left">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={
+                      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ||
+                      "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    }
+                    onChange={handleCaptchaChange}
+                    theme="light"
+                  />
+                </div>
                 {errors.captcha && (
-                  <p className="mt-2 text-sm text-red-600 font-medium">
+                  <p className="mt-2 text-xs sm:text-sm text-red-600 font-medium">
                     {errors.captcha}
                   </p>
                 )}
@@ -371,7 +373,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-[#0056FF] to-[#002D72] hover:from-[#0066FF] hover:to-[#003A8C] text-white font-bold text-lg py-4 rounded-2xl tracking-wide uppercase transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-[#0056FF] to-[#002D72] hover:from-[#0066FF] hover:to-[#003A8C] text-white font-bold text-base sm:text-lg py-3 sm:py-4 rounded-xl sm:rounded-2xl tracking-wide uppercase transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
               </button>

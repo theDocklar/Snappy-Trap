@@ -12,50 +12,50 @@ export default function ProductsHero({
   onFilterChange,
 }: ProductsHeroProps) {
   return (
-    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-20 lg:py-32 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-16 sm:py-20 lg:py-28 pt-24 sm:pt-28 lg:pt-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="font-black text-5xl lg:text-7xl text-white tracking-[-1.8px] mb-6">
+          <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] mb-4 sm:mb-6 leading-tight">
             Find the Right SnappyTrap for Your Project
           </h1>
-          <p className="font-light text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-12">
+          <p className="font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-8 sm:mb-10 lg:mb-12 px-2">
             Sink Drains Made Easy
           </p>
 
           {/* Filter Buttons */}
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-lg sm:max-w-none mx-auto px-2">
             <button
               onClick={() => onFilterChange("Bathroom")}
-              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl ${
+              className={`backdrop-blur-sm rounded-xl sm:rounded-2xl px-6 sm:px-8 py-3 sm:py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl w-full sm:w-auto ${
                 activeFilter === "Bathroom"
                   ? "bg-white/20 border-white/30"
                   : "bg-white/15 border-white/20"
               }`}
             >
-              <span className="font-black text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
+              <span className="font-black text-xl sm:text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
                 Bathroom
               </span>
             </button>
             <button
               onClick={() => onFilterChange("Kitchen")}
-              className={`backdrop-blur-sm rounded-2xl px-8 py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl ${
+              className={`backdrop-blur-sm rounded-xl sm:rounded-2xl px-6 sm:px-8 py-3 sm:py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl w-full sm:w-auto ${
                 activeFilter === "Kitchen"
                   ? "bg-white/20 border-white/30"
                   : "bg-white/15 border-white/20"
               }`}
             >
-              <span className="font-black text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
+              <span className="font-black text-xl sm:text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
                 Kitchen
               </span>
             </button>
           </div>
 
           {/* Available Retailers */}
-          <div className="mt-14">
-            <p className="font-bold text-base text-white/90 tracking-wide mb-6 uppercase">
+          <div className="mt-10 sm:mt-12 lg:mt-14">
+            <p className="font-bold text-sm sm:text-base text-white/90 tracking-wide mb-4 sm:mb-6 uppercase">
               Available at these retailers:
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-10 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-10 max-w-4xl mx-auto">
               {[
                 {
                   name: "Home Depot",
@@ -88,7 +88,7 @@ export default function ProductsHero({
                   href={retailer.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-2xl w-32 h-20 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-lg relative cursor-pointer"
+                  className="rounded-xl sm:rounded-2xl w-24 h-16 sm:w-28 sm:h-18 lg:w-32 lg:h-20 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl shadow-lg relative cursor-pointer"
                 >
                   <Image
                     src={retailer.logo}

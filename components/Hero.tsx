@@ -3,17 +3,17 @@ import SocialIcons from "./SocialIcons";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden min-h-screen flex items-center">
+    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-40 lg:pb-32 relative overflow-hidden min-h-screen flex items-center">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         {/* Decorative background elements */}
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
           {/* Left Side - Image */}
           <div className="relative order-1 lg:order-1">
-            <div className="relative rounded-[65px] overflow-hidden">
+            <div className="relative rounded-[35px] sm:rounded-[50px] lg:rounded-[65px] overflow-hidden">
               <Image
                 src="/images/hero-image.png"
                 alt="Professional installing Snappy Trap"
@@ -23,7 +23,7 @@ export default function Hero() {
               />
             </div>
             {/* Brand Slogan - Bottom Center */}
-            <div className="-mt-12 -mb-24 w-full flex justify-center">
+            <div className="-mt-8 sm:-mt-10 lg:-mt-12 -mb-16 sm:-mb-20 lg:-mb-24 w-full flex justify-center">
               <div className="w-[85%] lg:w-[90%]">
                 <Image
                   src="/images/snappy-white.png"
@@ -37,24 +37,24 @@ export default function Hero() {
           </div>
 
           {/* Right Side - Content */}
-          <div className="order-2 lg:order-2 space-y-6">
-            <div className="space-y-4">
-              <h1 className="font-black text-5xl lg:text-7xl text-white tracking-[-1.8px] leading-tight">
+          <div className="order-2 lg:order-2 space-y-5 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4">
+              <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] leading-tight">
                 Fast, Flexible,
                 <br />
                 Flawless
                 <br />
                 Installation
               </h1>
-              <p className="font-light text-2xl lg:text-3xl text-blue-100 tracking-[0.75px]">
+              <p className="font-light text-xl sm:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px]">
                 Sink Drains Made Easy
               </p>
             </div>
 
             {/* Feature Pills - 2x2 Grid */}
-            <div className="grid grid-cols-2 gap-4 max-w-xl">
-              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
-                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl">
+              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/complete-kits.png"
                     alt="Complete kits"
@@ -63,12 +63,12 @@ export default function Hero() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
                   Complete kits
                 </span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
-                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/no-tools.png"
                     alt="No tools required"
@@ -77,12 +77,12 @@ export default function Hero() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
                   No tools required
                 </span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
-                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/fit-anywhere.png"
                     alt="Fits any space"
@@ -91,12 +91,12 @@ export default function Hero() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
                   Fits any space
                 </span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20">
-                <div className="relative h-14 w-14 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/kitchen-sink.png"
                     alt="Kitchen & bath"
@@ -105,30 +105,30 @@ export default function Hero() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-base text-white tracking-[0.35px] uppercase">
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
                   kitchen & bath
                 </span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <a
                 href="#installation"
-                className="bg-gradient-to-r from-[#FF0004] to-[#002D72] hover:from-[#FF2024] hover:to-[#003A8C] text-white px-10 py-6 text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300 rounded-2xl tracking-wide uppercase"
+                className="bg-gradient-to-r from-[#FF0004] to-[#002D72] hover:from-[#FF2024] hover:to-[#003A8C] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 rounded-xl sm:rounded-2xl tracking-wide uppercase text-center"
               >
                 Installation Help
               </a>
               <a
                 href="#shop"
-                className="bg-[#043687] hover:bg-[#0056FF] text-white px-10 py-6 text-xl font-black shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300 rounded-2xl tracking-wide uppercase"
+                className="bg-[#043687] hover:bg-[#0056FF] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-black shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 rounded-xl sm:rounded-2xl tracking-wide uppercase text-center"
               >
                 SHOP now
               </a>
             </div>
 
             {/* Reviews & Warranty */}
-            <div className="flex items-center space-x-14 text-blue-100">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 lg:gap-14 text-blue-100">
               <div className="flex items-center space-x-2">
                 <svg
                   width="122"
@@ -136,7 +136,7 @@ export default function Hero() {
                   viewBox="0 0 122 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4"
+                  className="h-3 sm:h-4"
                 >
                   <path
                     d="M9.80808 1.04903C9.84936 0.984264 9.91314 0.929745 9.9922 0.891628C10.0713 0.853511 10.1625 0.833313 10.2556 0.833313C10.3486 0.833313 10.4398 0.853511 10.5189 0.891628C10.598 0.929745 10.6617 0.984264 10.703 1.04903L12.8792 4.47178C13.0225 4.69706 13.2342 4.89196 13.4959 5.03976C13.7576 5.18756 14.0616 5.28384 14.3818 5.32033L19.2484 5.87336C19.3406 5.88373 19.4273 5.91393 19.4985 5.96055C19.5698 6.00717 19.6228 6.06834 19.6516 6.13714C19.6804 6.20595 19.6839 6.27964 19.6616 6.34989C19.6393 6.42014 19.5921 6.48413 19.5254 6.53464L16.0059 9.19588C15.7737 9.37152 15.6001 9.58833 15.4998 9.82764C15.3995 10.067 15.3757 10.3216 15.4303 10.5697L16.2612 14.3296C16.2774 14.4012 16.2675 14.4749 16.2324 14.5423C16.1974 14.6097 16.1386 14.668 16.0629 14.7108C15.9872 14.7535 15.8975 14.7788 15.8041 14.7838C15.7108 14.7889 15.6174 14.7734 15.5348 14.7393L11.1844 12.9632C10.8978 12.8463 10.5788 12.7852 10.2551 12.7852C9.93132 12.7852 9.6124 12.8463 9.32574 12.9632L4.97628 14.7393C4.89369 14.7732 4.80049 14.7885 4.70728 14.7834C4.61406 14.7782 4.52458 14.7529 4.44901 14.7102C4.37343 14.6675 4.3148 14.6092 4.27978 14.5419C4.24476 14.4747 4.23475 14.4011 4.2509 14.3296L5.08085 10.5704C5.13567 10.3222 5.11192 10.0674 5.01164 9.82794C4.91136 9.58848 4.73757 9.37156 4.50525 9.19588L0.985737 6.53537C0.918469 6.48492 0.8708 6.42082 0.848162 6.35036C0.825523 6.27989 0.828826 6.20591 0.857692 6.13684C0.886558 6.06776 0.939828 6.00637 1.01143 5.95966C1.08304 5.91295 1.1701 5.88279 1.2627 5.87262L6.12841 5.32033C6.44895 5.28412 6.75336 5.18797 7.01544 5.04015C7.27751 4.89234 7.4894 4.69728 7.63287 4.47178L9.80808 1.04903Z"
@@ -171,16 +171,18 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-bold text-2xl">Reviews</span>
+                <span className="font-bold text-lg sm:text-xl lg:text-2xl">
+                  Reviews
+                </span>
               </div>
-              <div className="flex items-center space-x-6 w-80">
+              <div className="flex items-center space-x-3 sm:space-x-4 lg:space-x-6">
                 <svg
                   width="48"
                   height="42"
                   viewBox="0 0 48 42"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-14 h-9"
+                  className="w-10 h-8 sm:w-12 sm:h-9 lg:w-14 lg:h-10"
                 >
                   <path
                     d="M34.6908 22.6468C34.6908 30.8178 28.2696 34.9033 20.6377 37.2728C20.238 37.3935 19.8039 37.3877 19.4085 37.2565C11.7582 34.9033 5.33704 30.8178 5.33704 22.6468V11.2074C5.33704 10.774 5.53032 10.3584 5.87438 10.0519C6.21844 9.74541 6.68508 9.57324 7.17164 9.57324C10.8409 9.57324 15.4274 7.61221 18.6196 5.12823C19.0083 4.83244 19.5027 4.66992 20.0139 4.66992C20.5251 4.66992 21.0195 4.83244 21.4082 5.12823C24.6188 7.62855 29.1869 9.57324 32.8561 9.57324C33.3427 9.57324 33.8094 9.74541 34.1534 10.0519C34.4975 10.3584 34.6908 10.774 34.6908 11.2074V22.6468Z"
@@ -190,7 +192,7 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-bold text-2xl">
+                <span className="font-bold text-base sm:text-lg lg:text-xl">
                   5 year Limited warranty
                 </span>
               </div>
