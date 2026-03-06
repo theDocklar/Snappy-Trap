@@ -27,32 +27,32 @@ const reviews = [
 
 export default function CustomerReviews() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center font-black text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-16">
+        <h2 className="text-center font-black text-3xl sm:text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-6 sm:mb-10 lg:mb-14">
           Customer Reviews
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-3 sm:gap-5 lg:gap-6 mb-4 sm:mb-6 lg:mb-8">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-gray-100"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 {/* Avatar Placeholder */}
-                <div className="w-16 h-16 rounded-full bg-gray-200 flex-shrink-0 flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gray-200 flex-shrink-0 flex items-center justify-center">
                   {/* Placeholder circle */}
                 </div>
 
                 {/* Review Content */}
                 <div className="flex-1">
                   {/* Stars */}
-                  <div className="flex mb-3">
+                  <div className="flex mb-2 sm:mb-3">
                     {[...Array(5)].map((_, i) => (
                       <svg
                         key={i}
-                        className="w-5 h-5 text-yellow-400"
+                        className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -62,17 +62,17 @@ export default function CustomerReviews() {
                   </div>
 
                   {/* Quote Icon */}
-                  <div className="relative mb-3">
-                    <span className="text-5xl text-[#BEDBFF] font-light leading-none absolute -left-2 -top-2">
+                  <div className="relative mb-2 sm:mb-3">
+                    <span className="text-4xl sm:text-5xl text-[#BEDBFF] font-light leading-none absolute -left-1 sm:-left-2 -top-1 sm:-top-2">
                       "
                     </span>
-                    <p className="font-bold text-lg text-black pl-6 leading-relaxed">
+                    <p className="font-bold text-base sm:text-lg text-black pl-5 sm:pl-6 leading-snug sm:leading-relaxed">
                       {review.quote}
                     </p>
                   </div>
 
                   {/* Author */}
-                  <p className="text-sm text-[#4a5565] tracking-[0.35px] uppercase font-bold">
+                  <p className="text-xs sm:text-sm text-[#4a5565] tracking-[0.35px] uppercase font-bold">
                     — {review.author}
                   </p>
                 </div>

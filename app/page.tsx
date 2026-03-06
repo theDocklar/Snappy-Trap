@@ -51,9 +51,6 @@ export default function Home() {
       {/* Trusted By Section */}
       <TrustedBy />
 
-      {/* Newsletter Section */}
-      {/* <Newsletter /> */}
-
       {/* Footer */}
       <Footer />
     </main>

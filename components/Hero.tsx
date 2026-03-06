@@ -128,8 +128,8 @@ export default function Hero() {
             </div>
 
             {/* Reviews & Warranty */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 lg:gap-14 text-blue-100">
-              <div className="flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start sm:items-center justify-center lg:justify-start gap-4 sm:gap-8 lg:gap-14 text-blue-100">
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
                 <svg
                   width="122"
                   height="16"
@@ -171,11 +171,11 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-bold text-lg sm:text-xl lg:text-2xl">
+                <span className="font-bold text-lg sm:text-xl lg:text-2xl text-center lg:text-left">
                   Reviews
                 </span>
               </div>
-              <div className="flex items-center space-x-3 sm:space-x-4 lg:space-x-6">
+              <div className="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-4 lg:space-x-6">
                 <svg
                   width="48"
                   height="42"
@@ -192,14 +192,14 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-bold text-base sm:text-lg lg:text-xl">
+                <span className="font-bold text-base sm:text-lg lg:text-xl text-center lg:text-left">
                   5 year Limited warranty
                 </span>
               </div>
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex items-center space-x-8 mt-8">
+            <div className="flex items-center justify-center lg:justify-start space-x-8 mt-8">
               <a
                 href="https://youtube.com/@snappytrap"
                 target="_blank"
