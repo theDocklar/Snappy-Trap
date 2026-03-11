@@ -16,7 +16,7 @@ export default function HowItWorksHero() {
             How It Works
           </h1>
           <p
-            className="font-medium text-base sm:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto animate-fade-in px-2"
+            className="font-medium text-base sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto animate-fade-in px-2"
             style={{ animationDelay: "0.4s" }}
           >
             Watch our step-by-step videos to see how easy it is to install

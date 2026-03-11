@@ -48,12 +48,16 @@ export default function Footer() {
               <p className="hover:text-white transition-colors cursor-pointer py-1">
                 Installation Guide
               </p>
-              <Link
-                href={"/about"}
-                className="cursor-pointer block hover:text-white transition-colors py-1"
+              <a
+                href="/blogs/blog1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
               >
-                <p>Blogs</p>
-              </Link>
+                <p className="hover:text-white transition-colors cursor-pointer py-1">
+                  Blogs
+                </p>
+              </a>
 
               <p className="hover:text-white transition-colors cursor-pointer py-1">
                 FAQ

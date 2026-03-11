@@ -32,15 +32,15 @@ export default function Home() {
               title="BATHROOMS"
               productName="Bathroom Sink KIT"
               sku="DK-105"
-              image="/images/image12.png"
-              imageAlt="Bathroom sink with drain"
+              image="/images/bathroom.png"
+              imageAlt="Bathroom sink with cabinet"
               productLink="/products"
             />
             <ProductCard
               title="Kitchens"
               productName="Kitchen Sink KIT"
               sku="DK-100"
-              image="/images/image9.png"
+              image="/images/kitchen.png"
               imageAlt="Kitchen sink with drain"
               productLink="/products"
             />

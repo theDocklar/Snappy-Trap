@@ -23,28 +23,28 @@ export default function ProductsHero({
           </p>
 
           {/* Filter Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-lg sm:max-w-none mx-auto px-2">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-lg sm:max-w-none mx-auto px-2">
             <button
               onClick={() => onFilterChange("Bathroom")}
-              className={`backdrop-blur-sm rounded-xl sm:rounded-2xl px-6 sm:px-8 py-3 sm:py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl w-full sm:w-auto ${
+              className={`backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl ${
                 activeFilter === "Bathroom"
-                  ? "bg-white/20 border-white/30"
-                  : "bg-white/15 border-white/20"
+                  ? "bg-white/95 border-white text-[#002D72] hover:bg-white shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
+                  : "bg-white/20 border-white/40 text-white hover:bg-white/35 hover:border-white/60"
               }`}
             >
-              <span className="font-black text-xl sm:text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
+              <span className="font-black text-2xl sm:text-3xl lg:text-4xl tracking-[0.35px] uppercase">
                 Bathroom
               </span>
             </button>
             <button
               onClick={() => onFilterChange("Kitchen")}
-              className={`backdrop-blur-sm rounded-xl sm:rounded-2xl px-6 sm:px-8 py-3 sm:py-4 border transition-all hover:bg-white/30 hover:border-white/40 hover:scale-105 hover:shadow-xl w-full sm:w-auto ${
+              className={`backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl ${
                 activeFilter === "Kitchen"
-                  ? "bg-white/20 border-white/30"
-                  : "bg-white/15 border-white/20"
+                  ? "bg-white/95 border-white text-[#002D72] hover:bg-white shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
+                  : "bg-white/20 border-white/40 text-white hover:bg-white/35 hover:border-white/60"
               }`}
             >
-              <span className="font-black text-xl sm:text-2xl lg:text-3xl text-white tracking-[0.35px] uppercase">
+              <span className="font-black text-2xl sm:text-3xl lg:text-4xl tracking-[0.35px] uppercase">
                 Kitchen
               </span>
             </button>

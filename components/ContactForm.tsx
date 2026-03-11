@@ -171,24 +171,6 @@ export default function ContactForm() {
                   </a>
                 </div>
               </div>
-
-              <div className="flex items-start space-x-3 sm:space-x-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#0056FF] to-[#002D72] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin size={20} className="sm:w-6 sm:h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-base sm:text-lg text-[#002D72] uppercase mb-1">
-                    Visit Us
-                  </h3>
-                  <p className="font-light text-sm sm:text-base lg:text-lg text-[#4a5565]">
-                    CFX Plumbing,
-                    <br />
-                    700 N St Mary's Street,
-                    <br />
-                    Suite 1400, San Antonio, TX, 78205
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Additional Info */}
