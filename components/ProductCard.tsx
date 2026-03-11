@@ -12,7 +12,6 @@ type ProductCardProps = {
 export default function ProductCard({
   title,
   productName,
-  sku,
   image,
   imageAlt,
   productLink = "#",
@@ -24,7 +23,7 @@ export default function ProductCard({
           {title}
         </h2>
         <div className="relative flex-1 min-h-[300px] sm:min-h-[400px] lg:min-h-[476px] mb-5 sm:mb-6 flex items-center justify-center">
-          <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[609px] aspect-square rounded-full overflow-hidden">
+          <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[609px] aspect-square rounded-2xl overflow-hidden">
             <Image
               src={image}
               alt={imageAlt}

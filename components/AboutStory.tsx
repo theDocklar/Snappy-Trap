@@ -4,8 +4,8 @@ export default function AboutStory() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#043687] pt-24 sm:pt-28 lg:pt-32">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-[-1.8px] leading-[1.1] mb-6 sm:mb-8 lg:mb-10">
-          Our Story
+        <h2 className="font-black text-4xl sm:text-3xl md:text-6xl lg:text-5xl text-white tracking-[-1.8px] leading-[1.1] mb-6 sm:mb-8 lg:mb-10">
+          Snappy Trap - A Coflex Innovation
         </h2>
         <div className="relative h-[280px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full rounded-[20px] sm:rounded-[35px] lg:rounded-[55px] mx-auto lg:mx-0 mb-8 sm:mb-10 lg:mb-12 overflow-hidden shadow-xl">
           <Image

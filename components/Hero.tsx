@@ -22,7 +22,22 @@ export default function Hero() {
                 className="w-full h-auto object-cover"
               />
             </div>
+
             {/* Brand Slogan - Bottom Center */}
+            <div className="space-y-3 sm:space-y-4">
+              <h1 className="font-black mt-10 text-center text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white tracking-[-1.8px] leading-tight">
+                Fast, Flexible,
+                <br />
+                Flawless Installation
+              </h1>
+              <p className="font-light text-center text-xl sm:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px]">
+                Sink Drains Made Easy
+              </p>
+            </div>
+          </div>
+
+          {/* Right Side - Content */}
+          <div className="order-2 lg:order-2 space-y-5 sm:space-y-6">
             <div className="-mt-8 sm:-mt-10 lg:-mt-12 -mb-16 sm:-mb-20 lg:-mb-24 w-full flex justify-center">
               <div className="w-[85%] lg:w-[90%]">
                 <Image
@@ -33,22 +48,6 @@ export default function Hero() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-            </div>
-          </div>
-
-          {/* Right Side - Content */}
-          <div className="order-2 lg:order-2 space-y-5 sm:space-y-6">
-            <div className="space-y-3 sm:space-y-4">
-              <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] leading-tight">
-                Fast, Flexible,
-                <br />
-                Flawless
-                <br />
-                Installation
-              </h1>
-              <p className="font-light text-xl sm:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px]">
-                Sink Drains Made Easy
-              </p>
             </div>
 
             {/* Feature Pills - 2x2 Grid */}

@@ -9,16 +9,16 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "What is the length of the SnappyTrap™ hoses?",
+    question: "What is the length of the Snappy Trap™ hoses?",
     answer:
       'Double kitchen sinks drain kit, hose length: 13". Single kitchen sinks drain kit, hose length: 9". All bathroom sinks drain kit, hose length: 9".',
   },
   {
-    question: "How resistant is SnappyTrap™ to high temperature?",
+    question: "How resistant is Snappy Trap™ to high temperature?",
     answer: `It's safe to pour liquids down the drain up to boiling point (212° F / 100° C).`,
   },
   {
-    question: "Can the SnappyTrap™ be installed to a floor drain?",
+    question: "Can the Snappy Trap™ be installed to a floor drain?",
     answer:
       "Yes, it can. Depending on the preparation of the floor drain pipe, additional components may be needed. For a bare drain pipe coming from the floor, a 90 degree elbow with a marvel adapter will need to be installed to the drain pipe first.",
   },
