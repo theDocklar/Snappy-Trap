@@ -115,7 +115,7 @@ export default function InstallationGuide() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-black text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-4">
-            Why Choose SnappyTrap
+            Why Choose Snappy Trap
           </h2>
           <p className="font-light text-xl lg:text-2xl text-[#4a5565] tracking-[0.6px] max-w-3xl mx-auto">
             Experience the difference with our innovative, tool-free
@@ -162,7 +162,7 @@ export default function InstallationGuide() {
                   Watch Installation Video
                 </h3>
                 <p className="font-light text-xl text-blue-100 max-w-2xl mx-auto">
-                  See how easy it is to install SnappyTrap in just minutes.
+                  See how easy it is to install Snappy Trap in just minutes.
                 </p>
               </div>
             </div>

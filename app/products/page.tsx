@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Header from "@/components/Header";
 import ProductsHero from "@/components/ProductsHero";
 import ProductGrid from "@/components/ProductGrid";
@@ -9,10 +9,8 @@ import Footer from "@/components/Footer";
 import { getProductsByCategory } from "@/lib/products";
 
 export default function ProductsPage() {
-  const [activeFilter, setActiveFilter] = useState<"Bathroom" | "Kitchen">(
-    "Bathroom",
-  );
-  const productsRef = useRef<HTMLDivElement>(null);
+  const bathroomRef = useRef<HTMLDivElement>(null);
+  const kitchenRef = useRef<HTMLDivElement>(null);
 
   // Get products from centralized data source
   const bathroomProducts = getProductsByCategory("Bathroom").map((p) => ({
@@ -31,44 +29,41 @@ export default function ProductsPage() {
     productLink: p.productLink,
   }));
 
-  const handleFilterChange = (filter: "Bathroom" | "Kitchen") => {
-    setActiveFilter(filter);
-    // Scroll to products section after a brief delay to ensure DOM is updated
-    setTimeout(() => {
-      if (productsRef.current) {
-        productsRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }, 100);
+  const handleScroll = (section: "Bathroom" | "Kitchen") => {
+    if (section === "Bathroom" && bathroomRef.current) {
+      bathroomRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (section === "Kitchen" && kitchenRef.current) {
+      kitchenRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
     <main className="min-h-screen">
       <Header />
 
-      {/* Hero Section with Filters */}
-      <ProductsHero
-        activeFilter={activeFilter}
-        onFilterChange={handleFilterChange}
-      />
+      {/* Hero Section with Navigation Buttons */}
+      <ProductsHero onNavigate={handleScroll} />
 
-      {/* Show products based on active filter */}
-      <div ref={productsRef}>
-        {activeFilter === "Bathroom" && (
-          <ProductGrid
-            title="Bathroom Sink Drain Kits"
-            products={bathroomProducts}
-          />
-        )}
+      {/* Bathroom Section */}
+      <div ref={bathroomRef}>
+        <ProductGrid
+          title="Bathroom Sink Drain Kits"
+          products={bathroomProducts}
+        />
+      </div>
 
-        {activeFilter === "Kitchen" && (
-          <ProductGrid
-            title="Kitchen Sink Drain Kits"
-            products={kitchenProducts}
-          />
-        )}
+      {/* Kitchen Section */}
+      <div ref={kitchenRef}>
+        <ProductGrid
+          title="Kitchen Sink Drain Kits"
+          products={kitchenProducts}
+        />
       </div>
 
       {/* FAQ Section */}

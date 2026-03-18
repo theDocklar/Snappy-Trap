@@ -3,20 +3,16 @@
 import Image from "next/image";
 
 type ProductsHeroProps = {
-  activeFilter: "Bathroom" | "Kitchen";
-  onFilterChange: (filter: "Bathroom" | "Kitchen") => void;
+  onNavigate: (section: "Bathroom" | "Kitchen") => void;
 };
 
-export default function ProductsHero({
-  activeFilter,
-  onFilterChange,
-}: ProductsHeroProps) {
+export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
   return (
     <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-16 sm:py-20 lg:py-28 pt-24 sm:pt-28 lg:pt-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] mb-4 sm:mb-6 leading-tight">
-            Find the Right SnappyTrap for Your Project
+            Find the Right Snappy Trap for Your Project
           </h1>
           <p className="font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-8 sm:mb-10 lg:mb-12 px-2">
             Sink Drains Made Easy
@@ -25,24 +21,16 @@ export default function ProductsHero({
           {/* Filter Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-lg sm:max-w-none mx-auto px-2">
             <button
-              onClick={() => onFilterChange("Bathroom")}
-              className={`backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl ${
-                activeFilter === "Bathroom"
-                  ? "bg-white/95 border-white text-[#002D72] hover:bg-white shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
-                  : "bg-white/20 border-white/40 text-white hover:bg-white/35 hover:border-white/60"
-              }`}
+              onClick={() => onNavigate("Bathroom")}
+              className="backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 border-white bg-white/10 text-white transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl hover:bg-white/40 hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
             >
               <span className="font-black text-2xl sm:text-3xl lg:text-4xl tracking-[0.35px] uppercase">
                 Bathroom
               </span>
             </button>
             <button
-              onClick={() => onFilterChange("Kitchen")}
-              className={`backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl ${
-                activeFilter === "Kitchen"
-                  ? "bg-white/95 border-white text-[#002D72] hover:bg-white shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
-                  : "bg-white/20 border-white/40 text-white hover:bg-white/35 hover:border-white/60"
-              }`}
+              onClick={() => onNavigate("Kitchen")}
+              className="backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 border-white bg-white/10 text-white transition-all duration-300 hover:scale-105 w-full sm:w-auto shadow-2xl hover:bg-white/40 hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)]"
             >
               <span className="font-black text-2xl sm:text-3xl lg:text-4xl tracking-[0.35px] uppercase">
                 Kitchen

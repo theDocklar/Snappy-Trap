@@ -41,12 +41,7 @@ export default function Header() {
             >
               How it Works
             </Link>
-            <Link
-              href="#"
-              className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
-            >
-              For Pros
-            </Link>
+
             <Link
               href="/about"
               className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
@@ -68,10 +63,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-3 sm:space-x-4">
-            <button className="border-2 border-[#002D72] text-[#002D72] hover:bg-[#002D72] hover:text-white bg-transparent px-3 py-1.5 sm:px-4 sm:py-2 font-bold text-xs sm:text-sm rounded-lg tracking-wide uppercase transition-all">
-              EN | ES
-            </button>
-
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

@@ -20,7 +20,7 @@ export default function HowItWorksHero() {
             style={{ animationDelay: "0.4s" }}
           >
             Watch our step-by-step videos to see how easy it is to install
-            SnappyTrap and get expert tips for a perfect installation every
+            Snappy Trap and get expert tips for a perfect installation every
             time.
           </p>
         </div>

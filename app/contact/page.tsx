@@ -14,7 +14,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="font-light text-base sm:text-lg lg:text-2xl text-blue-100 tracking-[0.6px] max-w-3xl mx-auto px-2">
-            We're here to help with any questions about SnappyTrap products,
+            We're here to help with any questions about Snappy Trap products,
             installation, or support
           </p>
         </div>
