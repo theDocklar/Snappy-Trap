@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-3 sm:space-y-4">
             <h3 className="font-black text-2xl sm:text-3xl lg:text-[30px] leading-tight text-white tracking-[0.75px] italic">
-              SnappyTrap
+              Snappy Trap
             </h3>
             <p className="font-medium text-base sm:text-lg lg:text-xl text-blue-100 leading-relaxed">
               The leader in tool-free, leak-free drain solutions for over 15

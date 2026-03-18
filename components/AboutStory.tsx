@@ -2,55 +2,68 @@ import Image from "next/image";
 
 export default function AboutStory() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#043687] pt-24 sm:pt-28 lg:pt-32">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="font-black text-4xl sm:text-3xl md:text-6xl lg:text-5xl text-white tracking-[-1.8px] leading-[1.1] mb-6 sm:mb-8 lg:mb-10">
+    <section className="bg-[#043687] px-4 pb-12 pt-24 sm:px-6 sm:pb-16 sm:pt-28 lg:px-8 lg:pb-20 lg:pt-32">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="mb-8 text-4xl font-black leading-[1.1] tracking-[-1.4px] text-white sm:mb-10 sm:text-5xl lg:mb-12 lg:text-6xl">
           Snappy Trap - A Coflex Innovation
         </h2>
-        <div className="relative h-[280px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full rounded-[20px] sm:rounded-[35px] lg:rounded-[55px] mx-auto lg:mx-0 mb-8 sm:mb-10 lg:mb-12 overflow-hidden shadow-xl">
-          <Image
-            src="/images/about-us-1.png"
-            alt="Our Story"
-            fill
-            className="object-cover"
-          />
+
+        <div className="grid items-start gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12">
+          <div className="mt-14 max-w-2xl space-y-5 text-base font-normal leading-relaxed tracking-[-0.2px] text-white sm:text-lg lg:text-2xl">
+            <p>
+              Since our founding in 1989, Coflex has been a premier manufacturer
+              of world-class plumbing products focused on innovation that
+              delivers fast, efficient installation and maintenance.
+            </p>
+            <p>
+              More than 15 years ago Snappy Trap All-in-One Drain Kit was
+              developed to improve ease-of-installation for all types of sinks.
+              That&apos;s why Snappy Trap is known as &ldquo;
+              <strong>The Right Fit Drain Kit.</strong>&rdquo;
+            </p>
+          </div>
+
+          <div className="mx-auto w-full max-w-[480px] lg:mx-0">
+            <div className="relative h-[270px] overflow-hidden rounded-[28px] shadow-2xl sm:h-[340px] md:h-[400px] lg:h-[430px]">
+              <Image
+                src="/images/about-us-1.png"
+                alt="Coflex team member"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 92vw, (max-width: 1200px) 45vw, 420px"
+              />
+            </div>
+          </div>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
-          {/* Left Side - Content */}
-          <div className="space-y-6 sm:space-y-8">
-            <div className="space-y-4 sm:space-y-5 lg:space-y-6 font-normal text-base sm:text-lg md:text-xl lg:text-[20px] text-white tracking-[-0.5px] sm:tracking-[-0.8px] lg:tracking-[-1.2px] leading-[1.6] sm:leading-[1.55] lg:leading-[1.5]">
-              <p>
-                At SnappyTrap, we believe installing a kitchen sink drain should
-                be quick, clean, and frustration-free. That's why we engineered
-                an innovative universal drain kit that takes the guesswork out
-                of plumbing — no cutting, gluing, or special tools required.
-              </p>
-              <p>
-                Born from real-world experience and a passion for smart home
-                solutions, SnappyTrap is designed to simplify sink installations
-                for homeowners, DIYers, and professionals alike. Our system
-                ensures a perfect, leak-free fit every time, saving you time,
-                effort, and costly callbacks.
-              </p>
-              <p>
-                With precision engineering, durable materials, and eco-conscious
-                design, SnappyTrap continues to redefine convenience in home
-                plumbing. We're here to make your projects smoother — one snap
-                at a time.
-              </p>
+
+        <div className="mt-8 grid items-end gap-8 lg:mt-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+          <div className="mx-auto w-full max-w-[480px] lg:mx-0">
+            <div className="relative h-[270px] overflow-hidden rounded-[28px] shadow-2xl sm:h-[340px] md:h-[400px] lg:h-[430px]">
+              <Image
+                src="/images/about-us-3.png"
+                alt="Snappy Trap package"
+                fill
+                className="object-cover scale-110"
+                sizes="(max-width: 768px) 92vw, (max-width: 1200px) 45vw, 420px"
+              />
             </div>
           </div>
 
-          {/* Right Side - Image Placeholder */}
-          <div className="relative mt-8 lg:mt-0">
-            <div className="relative h-[280px] sm:h-[380px] md:h-[480px] lg:h-[600px] w-full max-w-[670px] rounded-[20px] sm:rounded-[35px] lg:rounded-[55px] mx-auto lg:mx-0 overflow-hidden shadow-xl">
-              <Image
-                src="/images/about-us-2.png"
-                alt="About Us"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="max-w-3xl space-y-5 text-base font-normal leading-[1.55] tracking-[-0.2px] text-white sm:text-lg lg:text-2xl">
+            <p>
+              Installing a new sink drain can be difficult, time consuming and
+              frustrating using traditional tubular pipe components.
+            </p>
+            <p>
+              Snappy Trap has changed all that with its tool-free,
+              user-friendly, maintenance-free system for kitchen &amp; bath sink
+              drains.
+            </p>
+            <p>
+              The patented flexible hose makes alignments and connections
+              simple, easy and secure. And, it&apos;s certified to meet plumbing
+              codes.
+            </p>
           </div>
         </div>
       </div>

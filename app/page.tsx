@@ -32,7 +32,7 @@ export default function Home() {
               title="BATHROOMS"
               productName="Bathroom Sink KIT"
               sku="DK-105"
-              image="/images/bathroom.png"
+              image="/images/bathroom.jpg"
               imageAlt="Bathroom sink with cabinet"
               productLink="/products"
             />
@@ -40,7 +40,7 @@ export default function Home() {
               title="Kitchens"
               productName="Kitchen Sink KIT"
               sku="DK-100"
-              image="/images/kitchen.png"
+              image="/images/kitchen.jpg"
               imageAlt="Kitchen sink with drain"
               productLink="/products"
             />
