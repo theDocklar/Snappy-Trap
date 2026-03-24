@@ -38,10 +38,10 @@ export default function Hero() {
 
           {/* Right Side - Content */}
           <div className="order-2 lg:order-2 space-y-5 sm:space-y-6">
-            <div className="-mt-8 sm:-mt-10 lg:-mt-12 -mb-16 sm:-mb-20 lg:-mb-24 w-full flex justify-center">
+            <div className="-mt-8 sm:-mt-10 lg:-mt-12 -mb-8 sm:-mb-10 lg:-mb-12 w-full flex justify-center">
               <div className="w-[85%] lg:w-[90%]">
                 <Image
-                  src="/images/snappy-white.png"
+                  src="/images/snappy-red.png"
                   alt="Snappy Trap"
                   width={2844}
                   height={468}

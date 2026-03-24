@@ -2,18 +2,21 @@ import Image from "next/image";
 
 const testimonials = [
   {
+    image: "/images/jenifer.jpg",
     quote:
       "Zero callbacks since switching to Snappy Trap. Quality and reliability you can count on.",
     author: "Jennifer L., General Contractor",
     rating: 5,
   },
   {
+    image: "/images/mike.jpg",
     quote:
       "Game changer for my business. Customers love the quick installation and I love the reliability.",
     author: "Mike P., Professional Plumber",
     rating: 5,
   },
   {
+    image: "/images/couple.jpg",
     quote:
       "Installed in under 5 minutes with no tools. This product is a game-changer for DIY projects!",
     author: "Sarah M., Homeowner",
@@ -46,10 +49,10 @@ export default function TrustedBy() {
               for any type of sink. Accommodates multiple wall connection types.
             </p>
 
-            <div className="-mt-16 sm:-mt-20 lg:-mt-24 -mb-16 sm:-mb-20 lg:-mb-24 w-full flex justify-start">
-              <div className="w-[85%] lg:w-[90%] -ml-10 sm:-ml-12 lg:-ml-15">
+            <div className="-mt-4 sm:-mt-12 lg:-mt-16 -mb-8 sm:-mb-20 lg:-mb-24 w-full flex justify-center sm:justify-start">
+              <div className="w-[70%] sm:w-[70%] lg:w-[75%] -ml-0 sm:-ml-10 lg:-ml-15">
                 <Image
-                  src="/images/snappy-white.png"
+                  src="/images/snappy-red.png"
                   alt="Snappy Trap"
                   width={2844}
                   height={468}
@@ -92,8 +95,15 @@ export default function TrustedBy() {
                 }`}
               >
                 <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-white border-3 sm:border-4 border-[#043687] shadow-lg flex-shrink-0 flex items-center justify-center">
-                    {/* Empty circle for avatar placeholder */}
+                  {/* User profile image */}
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-white border-3 sm:border-4 border-[#043687] shadow-lg flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.author}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <div className="flex mb-2 sm:mb-3">

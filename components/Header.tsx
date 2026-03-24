@@ -13,11 +13,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-14 sm:h-16 lg:h-20">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/snappy-header.png"
               alt="Snappy Trap"
               width={316}
               height={52}
-              className="h-8 sm:h-10 lg:h-12 w-auto"
+              className="h-8 sm:h-10 lg:h-14 w-auto"
             />
           </Link>
 
