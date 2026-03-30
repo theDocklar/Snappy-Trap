@@ -2,64 +2,26 @@
 
 export default function InstallationVideos() {
   const installationVideos = [
-    // {
-    //   id: "-MKiK3nnCng",
-    //   type: "youtube",
-    //   title: "Double Sink with Waste Disposal",
-    //   description:
-    //     "How to accommodate the Snappy Trap when installing to a waste disposal.",
-    // },
     {
-      id: "djtcRdJZG2s",
+      id: "5zbR6JPd1AE",
+      type: "youtube",
+      title: "Double Sink with Waste Disposal",
+      description:
+        "How to accommodate the Snappy Trap when installing to a waste disposal.",
+    },
+    {
+      id: "PuaxSpX7cYI",
       type: "youtube",
       title: "Double Sink Installation",
       description:
         "Different ways to accommodate the Snappy Trap, save more space under your double sink.",
     },
     {
-      id: "yToNfqJpprA",
+      id: "AfPbKsQJIik",
       type: "youtube",
-      title: "All-in-One Drain Kit",
+      title: "All-in-One Drain Kit for Double Bowl for Kitchen Sinks",
       description:
-        "How to install All-in-One Drain Kit for Double Bowl for Kitchen Sinks.",
-    },
-    {
-      id: "0",
-      type: "dropbox",
-      url: "https://www.dropbox.com/scl/fo/sahy8zp4okcf6cdddxzqf/AKYEH7DF4o1go4W0o494-8s/Snappy%20Trap%20Kits%20D2.mp4?rlkey=wy2wmxm9o0lw5peb97prt55d1&st=hognav9f&raw=1",
-      title: "Snappy Trap Kits",
-      description: "The right fit drain kit",
-    },
-
-    {
-      id: "1",
-      type: "dropbox",
-      url: "https://www.dropbox.com/scl/fo/sahy8zp4okcf6cdddxzqf/AA_l5EdrapIbq5SZW7hIiIY/How%20To%20Install%20All-In-One%20Drain%20Kit%20For%20Double%20Bowl%20For%20Kitchen%20D2.mp4?rlkey=wy2wmxm9o0lw5peb97prt55d1&st=8rxkytdo&raw=1",
-      title: "All-in-One Drain Kit",
-      description:
-        "How to install All-in-One Drain Kit for Double Bowl for Kitchen",
-    },
-    {
-      id: "2",
-      type: "dropbox",
-      url: "https://www.dropbox.com/scl/fo/sahy8zp4okcf6cdddxzqf/AGa6kanfZogDxUrfDU12mHI/Tips%20For%20Double%20Sink%20Installation%20with%20the%20Snappy%20Trap%20D2.mp4?rlkey=wy2wmxm9o0lw5peb97prt55d1&st=hfrw39fk&raw=1",
-      title: "Double Sink Installation",
-      description: "Tips For Double Sink Installation with the Snappy Trap",
-    },
-    {
-      id: "3",
-      type: "dropbox",
-      url: "https://www.dropbox.com/scl/fo/sahy8zp4okcf6cdddxzqf/ADEwsCOVAnu3D0z2_b06kkw/Tips%20For%20Double%20Sink%20With%20Disposal%20and%20the%20Snappy%20Trap%20D2.mp4?rlkey=wy2wmxm9o0lw5peb97prt55d1&st=vcg2h82p&raw=1",
-      title: "Double Sink with Waste Disposal",
-      description:
-        "How to accommodate the Snappy Trap when installing to a waste disposal",
-    },
-    {
-      id: "4",
-      type: "dropbox",
-      url: "https://www.dropbox.com/scl/fo/sahy8zp4okcf6cdddxzqf/ABNfvhOn83auwP8SSkByjWM/Snappy%20Trap%20Bathroom%20Sink%20D2.mp4?rlkey=wy2wmxm9o0lw5peb97prt55d1&st=46f44iym&raw=1",
-      title: "Snappy Trap Bathroom Sink",
-      description: "How to install Snappy Trap bathroom sink",
+        "How to install our Drain kit for a Kitchen Double Bowl with Waste Disposal.",
     },
   ];
 
@@ -85,22 +47,13 @@ export default function InstallationVideos() {
             >
               {/* Video Container */}
               <div className="relative w-full aspect-video">
-                {video.type === "youtube" ? (
-                  <iframe
-                    src={`https://www.youtube.com/embed/${video.id}`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  ></iframe>
-                ) : (
-                  <iframe
-                    src={video.url}
-                    title={video.title}
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  ></iframe>
-                )}
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                ></iframe>
               </div>
 
               {/* Video Info */}
