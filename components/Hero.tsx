@@ -1,7 +1,24 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import SocialIcons from "./SocialIcons";
 
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    { src: "/images/hero1.jpg", alt: "Professional installing Snappy Trap" },
+    { src: "/images/hero2.jpg", alt: "Snappy Trap Installation" },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-40 lg:pb-32 relative overflow-hidden min-h-screen flex items-center">
       {/* Background Pattern */}
@@ -13,14 +30,38 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
           {/* Left Side - Image */}
           <div className="relative order-1 lg:order-1">
-            <div className="relative rounded-[35px] sm:rounded-[50px] lg:rounded-[65px] overflow-hidden">
+            <div className="relative rounded-[35px] sm:rounded-[50px] lg:rounded-[65px] overflow-hidden group-">
               <Image
-                src="/images/hero-image.png"
-                alt="Professional installing Snappy Trap"
+                src={images[currentImageIndex].src}
+                alt={images[currentImageIndex].alt}
                 width={701}
                 height={701}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover transition-opacity duration-1000"
               />
+
+              {/* Learn More Button */}
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+                <button
+                  className="bg-white/90 hover:bg-white text-[#012965] px-6 py-3 rounded-full font-bold text-sm sm:text-base flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  aria-label="Learn more about Snappy Trap"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.5}
+                    stroke="currentColor"
+                    className="w-4 h-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* Brand Slogan - Bottom Center */}
