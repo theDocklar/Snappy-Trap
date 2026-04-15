@@ -38,7 +38,7 @@ export default function AboutStory() {
           <div className="mx-auto w-full max-w-[480px] lg:mx-0">
             <div className="relative h-[270px] overflow-hidden rounded-[28px] shadow-2xl sm:h-[340px] md:h-[400px] lg:h-[430px]">
               <Image
-                src="/images/about-us-3.png"
+                src="/images/about-us-3.jpg"
                 alt="Snappy Trap package"
                 fill
                 className="object-cover scale-110"

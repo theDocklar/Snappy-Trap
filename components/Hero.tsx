@@ -9,6 +9,9 @@ export default function Hero() {
   const images = [
     { src: "/images/hero1.jpg", alt: "Professional installing Snappy Trap" },
     { src: "/images/hero2.jpg", alt: "Snappy Trap Installation" },
+    { src: "/images/Family Kitchen.jpg", alt: "Family Kitchen" },
+    { src: "/images/Laundry Room.jpg", alt: "Laundry Room" },
+    { src: "/images/Wet Bar Sink.jpg", alt: "Bar Sink" },
   ];
 
   useEffect(() => {
@@ -30,13 +33,12 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
           {/* Left Side - Image */}
           <div className="relative order-1 lg:order-1">
-            <div className="relative rounded-[35px] sm:rounded-[50px] lg:rounded-[65px] overflow-hidden group-">
+            <div className="relative rounded-[35px] sm:rounded-[50px] lg:rounded-[65px] overflow-hidden group- aspect-[4/3] w-full">
               <Image
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].alt}
-                width={701}
-                height={701}
-                className="w-full h-auto object-cover transition-opacity duration-1000"
+                fill
+                className="object-cover transition-opacity duration-1000"
               />
 
               {/* Learn More Button */}
