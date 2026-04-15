@@ -3,6 +3,12 @@
 export default function InstallationVideos() {
   const installationVideos = [
     {
+      id: "LGjddznPOp0",
+      type: "youtube",
+      title: "Snappy Trap Kits",
+      description: "Modern easy way to install drains.",
+    },
+    {
       id: "5zbR6JPd1AE",
       type: "youtube",
       title: "Double Sink with Waste Disposal",
@@ -22,6 +28,12 @@ export default function InstallationVideos() {
       title: "All-in-One Drain Kit for Double Bowl for Kitchen Sinks",
       description:
         "How to install our Drain kit for a Kitchen Double Bowl with Waste Disposal.",
+    },
+    {
+      id: "2H_ZBYrkUZA",
+      type: "youtube",
+      title: "Snappy Trap Bathroom Sink",
+      description: "How to install our universal bathroom sink drain.",
     },
   ];
 
