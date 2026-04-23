@@ -3,12 +3,15 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import SocialIcons from "./SocialIcons";
+import Link from "next/link";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    { src: "/images/hero1.jpg", alt: "Professional installing Snappy Trap" },
-    { src: "/images/hero2.jpg", alt: "Snappy Trap Installation" },
+    { src: "/images/hero1.jpg", alt: "Bathroom" },
+    { src: "/images/DK-105 EXTENSION.jpg", alt: "DK-105" },
+    { src: "/images/hero2.jpg", alt: "Kitchen" },
+    { src: "/images/DK-100 DE.jpg", alt: "DK-100" },
     { src: "/images/Family Kitchen.jpg", alt: "Family Kitchen" },
     { src: "/images/Laundry Room.jpg", alt: "Laundry Room" },
     { src: "/images/Wet Bar Sink.jpg", alt: "Bar Sink" },
@@ -43,6 +46,7 @@ export default function Hero() {
 
               {/* Learn More Button */}
               <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+                <Link href='/how-it-works'>
                 <button
                   className="bg-white/90 hover:bg-white text-[#012965] px-6 py-3 rounded-full font-bold text-sm sm:text-base flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   aria-label="Learn more about Snappy Trap"
@@ -63,6 +67,7 @@ export default function Hero() {
                     />
                   </svg>
                 </button>
+                </Link>
               </div>
             </div>
 
