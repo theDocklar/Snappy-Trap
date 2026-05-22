@@ -3,6 +3,12 @@
 export default function InstallationVideos() {
   const installationVideos = [
     {
+      id: "qPhUJnTuVIE",
+      type: "youtube",
+      title: "Snappy Trap! All-in-one drain kit",
+      description: "",
+    },
+    {
       id: "LGjddznPOp0",
       type: "youtube",
       title: "Snappy Trap Kits",
