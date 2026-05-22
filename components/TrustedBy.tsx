@@ -62,21 +62,51 @@ export default function TrustedBy() {
             </div>
           </div>
 
-          {/* Right Side - Benefits in 2x2 Grid */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:gap-6 lg:col-span-1">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="aspect-square bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl hover:bg-white/25 transition-colors border border-white/20 flex flex-col items-center justify-center p-3 sm:p-4 lg:p-6"
-              >
-                <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-white mb-1 sm:mb-2 text-center">
-                  {benefit.title}
+          {/* Right Side - Single Benefits Box */}
+
+          <div className="bg-white/15 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/20 p-6 sm:p-8 lg:p-10 h-full flex flex-col justify-center">
+            <div className="grid grid-cols-2 gap-y-8 sm:gap-y-12 gap-x-8 sm:gap-x-10 text-center">
+              {/* Row 1 */}
+              <div className="flex flex-col items-center justify-center">
+                <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-white">
+                  Complete Kits
                 </h3>
-                <p className="font-bold text-xs sm:text-sm text-[#bedbff] tracking-[0.35px] uppercase text-center">
-                  {benefit.subtitle}
+                <p className="font-bold text-xs sm:text-sm text-[#bedbff] uppercase mt-2">
+                  Everything Included
                 </p>
               </div>
-            ))}
+
+              <div className="flex flex-col items-center justify-center">
+                <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-white">
+                  Faster Installs
+                </h3>
+                <p className="font-bold text-xs sm:text-sm text-[#bedbff] uppercase mt-2">
+                  Flexible Pipe
+                </p>
+              </div>
+
+              {/* Divider line */}
+              <div className="col-span-2 border-t border-white/30 my-2"></div>
+
+              {/* Row 2 */}
+              <div className="flex flex-col items-center justify-center">
+                <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-white">
+                  Secure Connections
+                </h3>
+                <p className="font-bold text-xs sm:text-sm text-[#bedbff] uppercase mt-2">
+                  No Tool Required
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center justify-center">
+                <h3 className="font-black text-lg sm:text-xl lg:text-2xl text-white">
+                  5 Year
+                </h3>
+                <p className="font-bold text-xs sm:text-sm text-[#bedbff] uppercase mt-2">
+                  Limited Warranty
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
