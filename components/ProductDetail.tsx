@@ -61,6 +61,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
             {/* Right Column - Product Header Info */}
             <div className="space-y-4 sm:space-y-5 lg:space-y-6 text-white mt-6 lg:mt-0">
+              {/* Product ID */}
+              <p className="text-sm sm:text-xl font-semibold text-white/90 tracking-wide uppercase">
+                {product.id}
+              </p>
+
               {/* Product Title */}
               <h1 className="font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white tracking-[-1.2px] uppercase leading-tight">
                 {product.productTitle}
@@ -116,7 +121,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               </div>
 
               {/* Customer Reviews Buttons */}
-              {(product.amazonLink || product.homeDepotLink) && (
+              {/* {(product.amazonLink || product.homeDepotLink) && (
                 <div className="pt-4 sm:pt-6 space-y-3 sm:space-y-4">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                     <p className="font-bold text-lg sm:text-xl lg:text-2xl text-white">
@@ -168,7 +173,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                     )}
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

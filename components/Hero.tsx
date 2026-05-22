@@ -132,25 +132,25 @@ export default function Hero() {
 
             {/* Feature Pills */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl">
-              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+              <div className="flex items-center space-x-2 sm:space-x-3 sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image src="/images/complete-kits.png" alt="Complete kits" width={70} height={70} className="object-contain" />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">Complete kits</span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image src="/images/no-tools.png" alt="No tools required" width={70} height={70} className="object-contain" />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">No tools required</span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+              <div className="flex items-center space-x-2 sm:space-x-3  rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image src="/images/fit-anywhere.png" alt="Fits any space" width={70} height={70} className="object-contain" />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">Fits any space</span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3 bg-white/15 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 border border-white/20">
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image src="/images/kitchen-sink.png" alt="Kitchen & bath" width={70} height={70} className="object-contain" />
                 </div>

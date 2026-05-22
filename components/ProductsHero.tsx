@@ -19,7 +19,7 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
           </p>
 
           {/* Filter Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-lg sm:max-w-none mx-auto px-2">
+          {/* <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-lg sm:max-w-none mx-auto px-2">
             <button
               onClick={() => onNavigate("Bathroom")}
               className="backdrop-blur-md rounded-2xl sm:rounded-3xl px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 border-2 border-white bg-white/10 text-white transition-all duration-300 hover:scale-105 w-full sm:w-56 lg:w-72 shadow-2xl hover:bg-white/40 hover:shadow-[0_8px_30px_rgba(255,255,255,0.4)] flex items-center justify-center"
@@ -36,7 +36,7 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
                 Kitchen
               </span>
             </button>
-          </div>
+          </div> */}
 
           {/* Available Retailers */}
           <div className="mt-10 sm:mt-12 lg:mt-14">

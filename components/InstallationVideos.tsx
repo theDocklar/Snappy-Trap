@@ -43,7 +43,7 @@ export default function InstallationVideos() {
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <h2 className="font-black text-3xl sm:text-4xl lg:text-5xl text-[#043687] tracking-[-1.2px] mb-3 sm:mb-4 uppercase">
-            Installation Tips
+            Installation Videos
           </h2>
           <p className="font-light text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Expert guidance to make your installation smooth and hassle-free.

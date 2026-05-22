@@ -29,7 +29,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <ProductCard
-              title="BATHROOMS"
+              title="BATHROOM"
               productName="Bathroom Sink KIT"
               sku="DK-105"
               image="/images/bathroom.jpg"
@@ -37,8 +37,8 @@ export default function Home() {
               productLink="/products"
             />
             <ProductCard
-              title="Kitchens"
-              productName="Kitchen Sink KIT"
+              title="Kitchen"
+              productName="Kitchen Sink KITs"
               sku="DK-100"
               image="/images/kitchen.jpg"
               imageAlt="Kitchen sink with drain"
