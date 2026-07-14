@@ -9,63 +9,63 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How do I select the right SnappyTrap™ kit for my sink?",
+    question: "How do I select the right SnappyTrap kit for my sink?",
     answer:
       "On both our website and packaging we detail which kits apply to different types of sinks. For kitchen sinks there are two choices. Use item DK-110 for double bowl sinks and item DK-100 for single bowl sinks. DK-100 also applies to kitchen prep sinks, wet bar sinks and laundry tubs. For all bathroom sinks use item DK-105.",
   },
   {
     question:
-      "What makes SnappyTrap™ different from traditional sink drain parts?",
+      "What makes SnappyTrap different from traditional sink drain parts?",
     answer:
-      'Traditional sink drain systems use rigid plastic parts. Achieving perfect alignment between the sink strainer (vertical pipe) and wall drain (horizontal pipe) can require extra parts like a 45 degree elbow. This means more parts, more connections and more potential leak points. Plus, additional cost. SnappyTrap™ is the "Right Fit Drain Kit" with a patented flexible hose for perfect alignment every time. Fast, Flexible, Flawless Installation!',
+      'Traditional sink drain systems use rigid plastic parts. Achieving perfect alignment between the sink strainer (vertical pipe) and wall drain (horizontal pipe) can require extra parts like a 45 degree elbow. This means more parts, more connections and more potential leak points. Plus, additional cost. SnappyTrap is the "Right Fit Drain Kit" with a patented flexible hose for perfect alignment every time. Fast, Flexible, Flawless Installation!',
   },
   {
-    question: "How does SnappyTrap™ compare to traditional sink drain parts?",
+    question: "How does SnappyTrap compare to traditional sink drain parts?",
     answer:
-      "Traditional plastic tubular drain parts need to be measured, cut, and in some cases glued together with specialized solvent cements. SnappyTrap™ comes pre-assembled and can be installed manually, usually without the use of any tools.",
+      "Traditional plastic tubular drain parts need to be measured, cut, and in some cases glued together with specialized solvent cements. SnappyTrap comes pre-assembled and can be installed manually, usually without the use of any tools.",
   },
   {
-    question: "Does SnappyTrap™ comply with plumbing codes and standards?",
+    question: "Does SnappyTrap comply with plumbing codes and standards?",
     answer:
-      "Yes, SnappyTrap™ model numbers DK-110 and DK-100 are certified by the International Association of Plumbing and Mechanical Officials (IAPMO) to meet the Uniform Plumbing Code (UPC). The UPC certification is valid in all US 50 states and Canada. Model numbers DK-110 and DK-100 comply with IGC 301. Model numbers DK-105 and DK-120 are listed with IAPMO to meet the criteria of IGC 328.",
+      "Yes, SnappyTrap model numbers DK-110 and DK-100 are certified by the International Association of Plumbing and Mechanical Officials (IAPMO) to meet the Uniform Plumbing Code (UPC). The UPC certification is valid in all US 50 states and Canada. Model numbers DK-110 and DK-100 comply with IGC 301. Model numbers DK-105 and DK-120 are listed with IAPMO to meet the criteria of IGC 328.",
   },
   {
-    question: "Does drain waste build up in the SnappyTrap™ hoses?",
+    question: "Does drain waste build up in the SnappyTrap hoses?",
     answer:
-      'No, the smooth hose interior is a patented feature of SnappyTrap™ and is "self-scouring" and maintenance free. Old-style corrugated hoses cause build-up and odors. They must be disconnected and cleaned out periodically.',
+      'No, the smooth hose interior is a patented feature of SnappyTrap and is "self-scouring" and maintenance free. Old-style corrugated hoses cause build-up and odors. They must be disconnected and cleaned out periodically.',
   },
   {
-    question: "How flexible are the SnappyTrap™ hoses?",
+    question: "How flexible are the SnappyTrap hoses?",
     answer:
-      "The SnappyTrap™ hoses are made from Flexible PVC material. The patented hose will easily adapt to offset pipe angles, yet is sturdy enough not to sag, and will function maintenance free for many years.",
+      "The SnappyTrap hoses are made from Flexible PVC material. The patented hose will easily adapt to offset pipe angles, yet is sturdy enough not to sag, and will function maintenance free for many years.",
   },
   {
-    question: "How much wall drain offset can SnappyTrap™ accommodate?",
+    question: "How much wall drain offset can SnappyTrap accommodate?",
     answer:
-      'SnappyTrap™ adapts to wall drain pipes with 10"-12" horizontal distance from the vertical sink strainer pipe location.',
+      'SnappyTrap adapts to wall drain pipes with 10"-12" horizontal distance from the vertical sink strainer pipe location.',
   },
   {
-    question: "Can the SnappyTrap™ be installed to a floor drain?",
+    question: "Can the SnappyTrap be installed to a floor drain?",
     answer:
       "Yes, it can. Depending on the preparation of the floor drain pipe, additional components may be needed. For a bare drain pipe coming from the floor, a 90 degree elbow with a marvel adapter will need to be installed to the drain pipe first.",
   },
   {
-    question: "What are the lengths of the SnappyTrap™ flexible hoses?",
+    question: "What are the lengths of the SnappyTrap flexible hoses?",
     answer:
       'Double kitchen sinks drain kit, hose length: 13". Single kitchen sinks drain kit, hose length: 9". All bathroom sinks drain kit, hose length: 9".',
   },
   {
-    question: "What is SnappyTrap™ high temperature specification?",
+    question: "What is SnappyTrap high temperature specification?",
     answer:
       "It is safe to pour liquids down the drain up to the boiling point (212° F / 100° C).",
   },
   {
-    question: "Can the length of the SnappyTrap™ hoses be cut?",
+    question: "Can the length of the SnappyTrap hoses be cut?",
     answer:
       'Yes, however in most cases the hose flexibility accommodates the required spacing. For tight space clearance issues, go to the "How it Works" section of our website for tips. If cutting is ultimately required, the videos will walk you through the easy steps.',
   },
   {
-    question: "Will SnappyTrap™ fit where there is limited vertical space?",
+    question: "Will SnappyTrap fit where there is limited vertical space?",
     answer:
       'If you have less than 4" of vertical space from sink drain to wall drain pipe, we offer our DK-120 SnappyTrap Special Kit for double bowl kitchen sinks.',
   },
@@ -86,9 +86,9 @@ const faqs: FAQItem[] = [
       'Please visit our "How it Works" page for instruction sheets and videos that address the most common installation issues. You can also visit our "Contact Us" page to get in touch directly.',
   },
   {
-    question: "Where can I buy a SnappyTrap™?",
+    question: "Where can I buy a SnappyTrap?",
     answer:
-      "SnappyTrap™ is available at all Home Depot, Lowe's and Menards stores, plus many ACE Hardware locations. Find us online at homedepot.com, amazon.com, lowes.com, menards.com, and acehardware.com.",
+      "SnappyTrap is available at all Home Depot, Lowe's and Menards stores, plus many ACE Hardware locations. Find us online at homedepot.com, amazon.com, lowes.com, menards.com, and acehardware.com.",
   },
 ];
 

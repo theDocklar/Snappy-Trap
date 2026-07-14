@@ -31,7 +31,7 @@ export default function ProductDetailPage({
       <ProductDetail product={product} />
 
       {/* FAQ Section */}
-      <FAQ />
+      <FAQ previewCount={3} />
 
       {/* Footer */}
       <Footer />

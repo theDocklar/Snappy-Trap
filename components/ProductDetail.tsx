@@ -9,10 +9,16 @@ interface ProductDetailProps {
 }
 
 export default function ProductDetail({ product }: ProductDetailProps) {
-  const [selectedImage, setSelectedImage] = useState(product.mainImage);
-
-  // Get gallery images for thumbnails
   const galleryImages = product.galleryImages || [product.mainImage];
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [showAllThumbs, setShowAllThumbs] = useState(false);
+
+  const selectedImage = galleryImages[selectedIndex];
+  const hasMultipleImages = galleryImages.length > 1;
+  const hiddenCount = Math.max(0, galleryImages.length - 3);
+  const visibleThumbs = showAllThumbs
+    ? galleryImages
+    : galleryImages.slice(0, 3);
 
   return (
     <>
@@ -33,28 +39,58 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 </div>
               </div>
 
-              {/* Thumbnail Images - Only show if there are multiple images */}
-              {galleryImages.length > 1 && (
+              {/* Thumbnail Images */}
+              {hasMultipleImages && (
                 <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
-                  {galleryImages.slice(0, 6).map((image, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setSelectedImage(image)}
-                      className={`bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 lg:p-4 shadow-md transition-all ${
-                        selectedImage === image
-                          ? "ring-2 sm:ring-4 ring-white"
-                          : "hover:ring-2 ring-white/50"
-                      }`}
-                    >
-                      <div className="relative w-full h-[80px] sm:h-[100px] lg:h-[120px] rounded-md sm:rounded-lg overflow-hidden">
-                        <img
-                          src={image}
-                          alt={`${product.productTitle} view ${idx + 1}`}
-                          className="object-contain w-full h-full"
-                        />
-                      </div>
-                    </button>
-                  ))}
+                  {visibleThumbs.map((image, idx) => {
+                    const isLastCollapsedThumb =
+                      !showAllThumbs && idx === 2 && hiddenCount > 0;
+
+                    return (
+                      <button
+                        key={`${image}-${idx}`}
+                        type="button"
+                        onClick={() => {
+                          if (isLastCollapsedThumb) {
+                            setShowAllThumbs(true);
+                          }
+                          setSelectedIndex(idx);
+                        }}
+                        className={`relative bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 lg:p-4 shadow-md transition-all ${
+                          selectedIndex === idx
+                            ? "ring-2 sm:ring-4 ring-white"
+                            : "hover:ring-2 ring-white/50"
+                        }`}
+                      >
+                        <div className="relative w-full h-[80px] sm:h-[100px] lg:h-[120px] rounded-md sm:rounded-lg overflow-hidden">
+                          <img
+                            src={image}
+                            alt={`${product.productTitle} view ${idx + 1}`}
+                            className="object-contain w-full h-full"
+                          />
+                          {isLastCollapsedThumb && (
+                            <div className="absolute inset-0 bg-[#043687]/75 flex items-center justify-center">
+                              <span className="text-white font-bold text-sm sm:text-base lg:text-lg uppercase tracking-wide">
+                                +{hiddenCount} more
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {showAllThumbs && hiddenCount > 0 && (
+                <div className="flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowAllThumbs(false)}
+                    className="text-white/90 hover:text-white font-semibold text-sm sm:text-base underline underline-offset-4"
+                  >
+                    Show fewer images
+                  </button>
                 </div>
               )}
             </div>
