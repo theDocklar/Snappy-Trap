@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import WhySnappyTrap from "@/components/WhySnappyTrap";
 import ProductCard from "@/components/ProductCard";
 import TrustedBy from "@/components/TrustedBy";
-import Newsletter from "@/components/Newsletter";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Why Snappy Trap Works Better */}
+      {/* Why SnappyTrap Works Better */}
       <WhySnappyTrap />
 
       {/* Product Selection Section */}
@@ -29,20 +29,22 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <ProductCard
-              title="BATHROOM"
+              title="Bathrooms"
               productName="Bathroom Sink KIT"
               sku="DK-105"
               image="/images/bathroom.jpg"
               imageAlt="Bathroom sink with cabinet"
               productLink="/products"
+              titleColor="bathroom"
             />
             <ProductCard
-              title="Kitchen"
+              title="Kitchens"
               productName="Kitchen Sink KITs"
               sku="DK-100"
               image="/images/kitchen.jpg"
               imageAlt="Kitchen sink with drain"
               productLink="/products"
+              titleColor="kitchen"
             />
           </div>
         </div>
@@ -50,6 +52,9 @@ export default function Home() {
 
       {/* Trusted By Section */}
       <TrustedBy />
+
+      {/* FAQ — preview 3, expand in place */}
+      <FAQ previewCount={3} />
 
       {/* Footer */}
       <Footer />

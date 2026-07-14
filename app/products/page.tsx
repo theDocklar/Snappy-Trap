@@ -67,7 +67,7 @@ export default function ProductsPage() {
       </div>
 
       {/* FAQ Section */}
-      <FAQ />
+      <FAQ previewCount={3} />
 
       {/* Footer */}
       <Footer />

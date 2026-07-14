@@ -4,7 +4,7 @@ const testimonials = [
   {
     image: "/images/jenifer.jpg",
     quote:
-      "Zero callbacks since switching to Snappy Trap. Quality and reliability you can count on.",
+      "Zero callbacks since switching to SnappyTrap. Quality and reliability you can count on.",
     author: "Jennifer L., General Contractor",
     rating: 5,
   },
@@ -43,7 +43,7 @@ export default function TrustedBy() {
             </h2>
 
             <p className="font-medium text-base sm:text-lg lg:text-xl text-blue-100 tracking-[0.6px] mb-6 sm:mb-8 leading-relaxed">
-              Snappy Trap All-In-One Drain Kits have been making sink drain
+              SnappyTrap All-In-One Drain Kits have been making sink drain
               installations faster, easier and more secure for over 15 years.
               Patented flexible, smooth-interior pipe and tool-free design. Kits
               for any type of sink. Accommodates multiple wall connection types.
@@ -53,7 +53,7 @@ export default function TrustedBy() {
               <div className="w-[70%] sm:w-[70%] lg:w-[75%] -ml-0 sm:-ml-10 lg:-ml-15">
                 <Image
                   src="/images/snappy-red.png"
-                  alt="Snappy Trap"
+                  alt="SnappyTrap"
                   width={2844}
                   height={468}
                   className="w-full h-auto object-contain"

@@ -7,7 +7,7 @@ const reviews = [
   },
   {
     quote:
-      "Zero callbacks since switching to Snappy Trap. Quality and reliability you can count on.",
+      "Zero callbacks since switching to SnappyTrap. Quality and reliability you can count on.",
     author: "JENNIFER L., GENERAL CONTRACTOR",
     rating: 5,
   },

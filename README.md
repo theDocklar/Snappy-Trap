@@ -1,6 +1,6 @@
-# Snappy Trap - Next.js Static Website
+# SnappyTrap - Next.js Static Website
 
-A static website for Snappy Trap, converted from Figma design to Next.js.
+A static website for SnappyTrap, converted from Figma design to Next.js.
 
 ## Getting Started
 

@@ -8,7 +8,14 @@ type ProductCardProps = {
   image: string;
   imageAlt: string;
   productLink?: string;
+  /** Packaging-matched category color */
+  titleColor?: "bathroom" | "kitchen";
 };
+
+const titleStyles = {
+  bathroom: "text-[#00A9E0]",
+  kitchen: "text-[#002D72]",
+} as const;
 
 export default function ProductCard({
   title,
@@ -16,12 +23,15 @@ export default function ProductCard({
   image,
   imageAlt,
   productLink = "#",
+  titleColor = "bathroom",
 }: ProductCardProps) {
   return (
     <div className="bg-white overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 group border-0 flex flex-col h-full min-h-[600px] sm:min-h-[750px] lg:min-h-[874px]">
       <div className="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
-        <Link href={productLink}>
-          <h2 className="font-black text-3xl sm:text-4xl lg:text-5xl text-black tracking-[0.6px] uppercase mb-4 sm:mb-6 text-center">
+        <Link href={productLink} className="flex justify-center mb-4 sm:mb-6">
+          <h2
+            className={`font-black text-3xl sm:text-4xl lg:text-5xl tracking-[0.6px] uppercase text-center ${titleStyles[titleColor]}`}
+          >
             {title}
           </h2>
         </Link>

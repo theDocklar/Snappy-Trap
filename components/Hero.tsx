@@ -168,7 +168,7 @@ export default function Hero() {
                 <Link href={images[currentIndex].link || "/products"}>
                   <button
                     className="bg-white/90 hover:bg-white text-[#012965] px-6 py-3 rounded-full font-bold text-sm sm:text-base flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                    aria-label="Learn more about Snappy Trap"
+                    aria-label="Learn more about SnappyTrap"
                   >
                     Learn More
                     <svg
@@ -197,7 +197,7 @@ export default function Hero() {
                 <br />
                 Flawless Installation
               </h1>
-              <p className="font-light text-center text-xl sm:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px]">
+              <p className="font-black text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-white tracking-[0.75px]">
                 Sink Drains Made Easy
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function Hero() {
               <div className="w-[85%] lg:w-[90%]">
                 <Image
                   src="/images/snappy-red.png"
-                  alt="Snappy Trap"
+                  alt="SnappyTrap"
                   width={2844}
                   height={468}
                   className="w-full h-auto object-contain"
@@ -217,12 +217,26 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Feature Pills */}
+            {/* Feature Pills — packaging benefit bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl">
               <div className="flex items-center space-x-2 sm:space-x-3 sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
-                    src="/images/complete-kits.png"
+                    src="/images/snapping.png"
+                    alt="Easy installation"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
+                  Easy Installation
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src="/images/100.png"
                     alt="Complete kits"
                     width={70}
                     height={70}
@@ -230,24 +244,38 @@ export default function Hero() {
                   />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
-                  Complete kits
+                  Complete Kits
                 </span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/no-tools.png"
-                    alt="No tools required"
+                    alt="Tool-free"
                     width={70}
                     height={70}
                     className="object-contain"
                   />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
-                  No tools required
+                  Tool-Free
                 </span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3  rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
+                <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src="/images/kitchen-sink.png"
+                    alt="Kitchens, baths and more"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
+                  Kitchens, Baths & More
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
                     src="/images/fit-anywhere.png"
@@ -258,36 +286,36 @@ export default function Hero() {
                   />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
-                  Fits any space
+                  Fits any Space
                 </span>
               </div>
-              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 ">
+              <div className="flex items-center space-x-2 sm:space-x-3 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
-                    src="/images/kitchen-sink.png"
-                    alt="Kitchen & bath"
+                    src="/images/complete-kits.png"
+                    alt="Code approved"
                     width={70}
                     height={70}
                     className="object-contain"
                   />
                 </div>
                 <span className="font-bold text-sm sm:text-base text-white tracking-[0.35px] uppercase">
-                  kitchen & bath
+                  Code Approved
                 </span>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <a
-                href="#installation"
-                className="bg-gradient-to-r from-[#FF0004] to-[#002D72] hover:from-[#FF2024] hover:to-[#003A8C] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 rounded-xl sm:rounded-2xl tracking-wide uppercase text-center"
+              <Link
+                href="/how-it-works"
+                className="bg-[#043687] hover:bg-[#0056FF] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-bold rounded-xl sm:rounded-2xl tracking-wide uppercase text-center ring-1 ring-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.35),0_0_0_1px_rgba(255,255,255,0.08)_inset] hover:shadow-[0_16px_40px_rgba(0,0,0,0.45),0_0_0_1px_rgba(255,255,255,0.12)_inset] transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300"
               >
                 Installation Help
-              </a>
+              </Link>
               <a
                 href="#shop"
-                className="bg-[#043687] hover:bg-[#0056FF] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-black shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300 rounded-xl sm:rounded-2xl tracking-wide uppercase text-center"
+                className="bg-[#043687] hover:bg-[#0056FF] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-black rounded-xl sm:rounded-2xl tracking-wide uppercase text-center ring-1 ring-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.35),0_0_0_1px_rgba(255,255,255,0.08)_inset] hover:shadow-[0_16px_40px_rgba(0,0,0,0.45),0_0_0_1px_rgba(255,255,255,0.12)_inset] transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300"
               >
                 SHOP now
               </a>

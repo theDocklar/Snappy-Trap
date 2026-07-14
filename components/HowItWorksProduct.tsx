@@ -16,7 +16,7 @@ export default function HowItWorksProduct() {
               <div className="relative w-full h-[500px] lg:h-[600px] overflow-hidden rounded-xl">
                 <img
                   src="/images/image9.png"
-                  alt="Snappy Trap Universal Kitchen Drain Kit"
+                  alt="SnappyTrap Universal Kitchen Drain Kit"
                   className="object-contain w-full h-full"
                 />
               </div>
@@ -42,7 +42,7 @@ export default function HowItWorksProduct() {
           <div className="space-y-6 text-white">
             {/* Product Title */}
             <h1 className="font-black text-4xl lg:text-5xl text-white tracking-[-1.2px] uppercase">
-              Snappy Trap Universal Kitchen Drain Kit for Your Project
+              SnappyTrap Universal Kitchen Drain Kit for Your Project
             </h1>
 
             {/* Rating */}
