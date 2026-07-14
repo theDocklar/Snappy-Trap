@@ -5,13 +5,13 @@ export default function InstallationVideos() {
     {
       id: "qPhUJnTuVIE",
       type: "youtube",
-      title: "Snappy Trap! All-in-one drain kit",
+      title: "SnappyTrap! All-in-one drain kit",
       description: "",
     },
     {
       id: "LGjddznPOp0",
       type: "youtube",
-      title: "Snappy Trap Kits",
+      title: "SnappyTrap Kits",
       description: "Modern easy way to install drains.",
     },
     {
@@ -19,14 +19,14 @@ export default function InstallationVideos() {
       type: "youtube",
       title: "Double Sink with Waste Disposal",
       description:
-        "How to accommodate the Snappy Trap when installing to a waste disposal.",
+        "How to accommodate the SnappyTrap when installing to a waste disposal.",
     },
     {
       id: "PuaxSpX7cYI",
       type: "youtube",
       title: "Double Sink Installation",
       description:
-        "Different ways to accommodate the Snappy Trap, save more space under your double sink.",
+        "Different ways to accommodate the SnappyTrap, save more space under your double sink.",
     },
     {
       id: "AfPbKsQJIik",
@@ -38,7 +38,7 @@ export default function InstallationVideos() {
     {
       id: "2H_ZBYrkUZA",
       type: "youtube",
-      title: "Snappy Trap Bathroom Sink",
+      title: "SnappyTrap Bathroom Sink",
       description: "How to install our universal bathroom sink drain.",
     },
   ];

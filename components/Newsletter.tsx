@@ -10,7 +10,7 @@ export default function Newsletter() {
             <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[600px]">
               <Image
                 src="/images/image9.png"
-                alt="Kitchen sink with Snappy Trap installation"
+                alt="Kitchen sink with SnappyTrap installation"
                 fill
                 className="object-contain"
               />

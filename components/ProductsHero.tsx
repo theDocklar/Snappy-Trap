@@ -12,7 +12,7 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] mb-4 sm:mb-6 leading-tight">
-            Find the Right Snappy Trap for Your Project
+            Find the Right SnappyTrap for Your Project
           </h1>
           <p className="font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-8 sm:mb-10 lg:mb-12 px-2">
             Sink Drains Made Easy

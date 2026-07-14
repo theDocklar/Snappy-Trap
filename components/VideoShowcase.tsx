@@ -6,11 +6,11 @@ export default function VideoShowcase() {
       id: "nHNFFfehByI",
       title: "How to Cut a Long Wall Drain Pipe",
       description:
-        "Properly install the Snappy Trap when the wall drain pipe is sticking out too far from the wall.",
+        "Properly install the SnappyTrap when the wall drain pipe is sticking out too far from the wall.",
     },
     {
       id: "-LKtsGZvJdA",
-      title: "How to Cut the Length of the Snappy Trap Hoses",
+      title: "How to Cut the Length of the SnappyTrap Hoses",
       description: "Simple way to cut the length of the hoses.",
     },
     {

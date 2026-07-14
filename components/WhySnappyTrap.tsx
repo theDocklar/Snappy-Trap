@@ -53,7 +53,7 @@ export default function WhySnappyTrap() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <h2 className="font-black text-3xl sm:text-4xl lg:text-5xl text-black tracking-[-1.2px] uppercase mb-3 sm:mb-4">
-            Why Snappy Trap Works Better
+            Why SnappyTrap Works Better
           </h2>
           <p className="font-light text-base sm:text-lg lg:text-xl xl:text-2xl text-[#4a5565] tracking-[0.6px] max-w-3xl mx-auto px-2">
             Experience the difference with our patented technology and

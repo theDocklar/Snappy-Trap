@@ -14,7 +14,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/snappy-header.png"
-              alt="Snappy Trap"
+              alt="SnappyTrap"
               width={316}
               height={52}
               className="h-8 sm:h-10 lg:h-14 w-auto"
@@ -41,7 +41,12 @@ export default function Header() {
             >
               How it Works
             </Link>
-
+            <Link
+              href="/#faq"
+              className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
+            >
+              FAQ
+            </Link>
             <Link
               href="/about"
               className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
@@ -120,11 +125,11 @@ export default function Header() {
             How it Works
           </Link>
           <Link
-            href="#"
+            href="/#faq"
             onClick={() => setMobileMenuOpen(false)}
             className="block font-medium text-base text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] hover:bg-blue-50 transition-colors py-3 px-4 rounded-lg"
           >
-            For Pros
+            FAQ
           </Link>
           <Link
             href="/about"
