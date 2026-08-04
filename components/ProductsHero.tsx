@@ -1,10 +1,29 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 type ProductsHeroProps = {
   onNavigate: (section: "Bathroom" | "Kitchen") => void;
 };
+
+const featuredProducts = [
+  {
+    name: "Bathroom Sink All-in-One Drain Kit",
+    image: "/images/dk105-front.png",
+    link: "/products/dk-105",
+  },
+  {
+    name: "Single Bowl Kitchen Sink All-in-One Drain Kit",
+    image: "/images/dk100-front.png",
+    link: "/products/dk-100",
+  },
+  {
+    name: "Double Bowl Kitchen Sink All-in-One Drain Kit",
+    image: "/images/dk110-front.png",
+    link: "/products/dk-110",
+  },
+];
 
 export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
   return (
@@ -37,6 +56,35 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
               </span>
             </button>
           </div> */}
+
+          {/* Featured Product Packaging */}
+          <div className="mt-8 sm:mt-10 mb-2 sm:mb-4 max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-2 lg:gap-3">
+              {featuredProducts.map((product) => (
+                <Link
+                  key={product.link}
+                  href={product.link}
+                  className="group relative w-full sm:flex-1 min-w-0 max-w-[360px] transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
+                  aria-label={product.name}
+                >
+                  <div className="relative w-full h-40 sm:h-52 md:h-56 lg:h-64">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 640px) 200px, 360px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="pointer-events-none absolute inset-x-0 bottom-2 sm:bottom-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <span className="inline-block px-3 sm:px-4 py-1 rounded-full bg-white/95 text-[#002D72] font-bold text-xs sm:text-sm uppercase tracking-wide shadow-lg">
+                      View Product
+                    </span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
 
           {/* Available Retailers */}
           <div className="mt-10 sm:mt-12 lg:mt-14">
