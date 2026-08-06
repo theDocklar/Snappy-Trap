@@ -4,77 +4,179 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import SocialIcons from "./SocialIcons";
 import Link from "next/link";
+import { link } from "fs";
 
 export default function Hero() {
   const images = [
     {
-      src: "/images/Family Kitchen.jpg",
+      src: "/images/hero2.jpg",
+      alt: "Kitchen",
+      title: "Kitchens",
+      link: "/products/dk-110",
+    },
+    {
+      src: "/images/DK-110-Kitchen-User-01.jpg",
       alt: "Family Kitchen",
-      title: "Easy Installation!",
+      title: "Kitchens",
       link: "/how-it-works",
     },
     {
-      src: "/images/vide0-ss.png",
+      src: "/images/DK110-Kitchen-Close Up.jpg",
+      alt: "Kitchen",
+      title: "Kitchens",
+      link: "/products/dk-110",
+    },
+    {
+      src: "/images/DK110-Kitchen-Packaging.jpg",
+      alt: "Kitchen",
+      title: "Packaging",
+      link: "/products/dk-110",
+    },
+    {
+      src: "/images/DK110-Kitchen-Close-Up-2.jpg",
       alt: "Video",
       title: "Product Video",
       link: "/how-it-works",
     },
-
-    { src: "/images/hero2.jpg", alt: "Kitchen", title: "Kitchens" },
     {
-      src: "/images/about-us-3.jpg",
-      alt: "complete kit",
-      title: "Complete Kits",
-      link: "/products",
-    },
-    {
-      src: "/images/dk110-2.avif",
-      alt: "double kitchen sink",
-      title: "Double Kitchen Sinks",
-      link: "/products/dk-110",
-    },
-    {
-      src: "/images/DK-100 DE.jpg",
-      alt: "DK-100",
-      title: "Single Kitchen Sinks",
+      src: "/images/DK-100-Minibar-Ambience.jpg",
+      alt: "Minibar",
+      title: "Minibar",
       link: "/products/dk-100",
     },
     {
-      src: "/images/hero1.jpg",
-      alt: "Bathroom",
-      title: "Bathroom Sinks",
-      link: "/products",
+      src: "/images/DK-100-Minibar-User.jpg",
+      alt: "Minibar",
+      title: "Minibar",
+      link: "/products/dk-100",
     },
-    //
     {
-      src: "/images/DK-105 EXTENSION.jpg",
-      alt: "DK-105",
+      src: "/images/DK-100-Minibar-Close Up.jpg",
+      alt: "Minibar",
+      title: "Minibar",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Minibar-Packaging.jpg",
+      alt: "Minibar",
+      title: "Packaging",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Minibar-Installation.jpg",
+      alt: "Minibar",
+      title: "Minibar",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Laundry-Ambience.jpg",
+      alt: "Laundry",
+      title: "Laundry",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Bathroom-User.jpg",
+      alt: "Laundry",
+      title: "Laundry",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Laundry-Close Up.jpg",
+      alt: "Laundry",
+      title: "Laundry",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Laundry-Packaging.jpg",
+      alt: "Laundry",
+      title: "Packaging",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-100-Laundry-Installation.jpg",
+      alt: "Laundry",
+      title: "Packaging",
+      link: "/products/dk-100",
+    },
+    {
+      src: "/images/DK-105-Bathroom-Ambience.jpg",
+      alt: "Bathroom",
       title: "Bathroom Sinks",
       link: "/products/dk-105",
     },
     {
-      src: "/images/Laundry Room.jpg",
-      alt: "Laundry Room",
-      title: "Laundry Room",
-      link: "/products",
+      src: "/images/DK-105-Bathroom-User.jpg",
+      alt: "Bathroom",
+      title: "Bathroom Sinks",
+      link: "/products/dk-105",
     },
     {
-      src: "/images/DK-100 DE.jpg",
-      alt: "DK-100",
-      title: "Laundry Tubs & Sinks",
-      link: "/products/dk-100",
+      src: "/images/DK-105-Bathroom-Close Up.jpg",
+      alt: "Bathroom",
+      title: "Bathroom Sinks",
+      link: "/products/dk-105",
     },
     {
-      src: "/images/Wet Bar Sink.jpg",
-      alt: "Bar Sink",
-      title: "Prep & Bar Areas",
+      src: "/images/DK-105-Bathroom-Packaging.jpg",
+      alt: "Bathroom",
+      title: "Bathroom Sinks",
+      link: "/products/dk-105",
     },
     {
-      src: "/images/DK-100 DE.jpg",
-      alt: "DK-100",
-      title: "Prep & Bar Sinks",
-      link: "/products/dk-100",
+      src: "/images/DK-105-Bathroom-Installation.jpg",
+      alt: "Bathroom",
+      title: "Bathroom Sinks",
+      link: "/products/dk-105",
     },
+
+    // {
+    //   src: "/images/dk110-2.avif",
+    //   alt: "double kitchen sink",
+    //   title: "Double Kitchen Sinks",
+    //   link: "/products/dk-110",
+    // },
+    // {
+    //   src: "/images/DK-100 DE.jpg",
+    //   alt: "DK-100",
+    //   title: "Single Kitchen Sinks",
+    //   link: "/products/dk-100",
+    // },
+    // {
+    //   src: "/images/hero1.jpg",
+    //   alt: "Bathroom",
+    //   title: "Bathroom Sinks",
+    //   link: "/products",
+    // },
+    // //
+    // {
+    //   src: "/images/DK-105 EXTENSION.jpg",
+    //   alt: "DK-105",
+    //   title: "Bathroom Sinks",
+    //   link: "/products/dk-105",
+    // },
+    // {
+    //   src: "/images/Laundry Room.jpg",
+    //   alt: "Laundry Room",
+    //   title: "Laundry Room",
+    //   link: "/products",
+    // },
+    // {
+    //   src: "/images/DK-100 DE.jpg",
+    //   alt: "DK-100",
+    //   title: "Laundry Tubs & Sinks",
+    //   link: "/products/dk-100",
+    // },
+    // // {
+    // //   src: "/images/Wet Bar Sink.jpg",
+    // //   alt: "Bar Sink",
+    // //   title: "Prep & Bar Areas",
+    // // },
+    // {
+    //   src: "/images/DK-100 DE.jpg",
+    //   alt: "DK-100",
+    //   title: "Prep & Bar Sinks",
+    //   link: "/products/dk-100",
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

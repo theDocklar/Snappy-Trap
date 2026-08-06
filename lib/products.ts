@@ -36,8 +36,8 @@ export const products: Product[] = [
       "/images/dk105-6.jpg",
       "/images/dk105-7.jpg",
       "/images/dk105-8.jpg",
-      "/images/dk105-9.png",
-      "/images/dk105-10.png",
+      "/images/dk105-9.jpg",
+      "/images/dk105-10.jpg",
       "/images/dk105-11.jpg",
     ],
     bulletFeatures: [
@@ -80,8 +80,8 @@ export const products: Product[] = [
       "/images/dk100-7.jpg",
       "/images/dk100-8.jpg",
       "/images/dk100-11.jpg",
-      "/images/dk100-9.png",
-      "/images/dk100-10.png",
+      "/images/dk100-9.jpg",
+      "/images/dk100-10.jpg",
     ],
     bulletFeatures: [
       "Everything you need in one complete kit",
@@ -124,8 +124,8 @@ export const products: Product[] = [
       "/images/dk110-3.jpg",
       "/images/dk110-4.jpg",
       "/images/dk110-5.jpg",
-      "/images/dk110-6.png",
-      "/images/dk110-7.png",
+      "/images/dk110-6.jpg",
+      "/images/dk110-7.jpg",
     ],
     bulletFeatures: [
       "Everything you need in one complete kit",
