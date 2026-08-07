@@ -1,12 +1,12 @@
 export default function AboutHero() {
   return (
-    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-20 lg:py-32 relative overflow-hidden pt-32">
+    <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-16 sm:py-20 lg:py-32 relative overflow-hidden pt-24 sm:pt-28 lg:pt-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="font-black text-5xl lg:text-7xl text-white tracking-[-1.8px] mb-6">
+          <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white tracking-[-1.8px] mb-4 sm:mb-6 leading-tight px-2">
             SnappyTrap - A Coflex Innovation
           </h1>
-          <p className="font-light text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] max-w-3xl mx-auto">
+          <p className="font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] max-w-3xl mx-auto px-2">
             Leading the industry in tool-free, leak-free drain solutions for
             over 15 years.
           </p>

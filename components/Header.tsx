@@ -21,8 +21,8 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
+          {/* Desktop Navigation — lg+ only; tablet uses burger */}
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <Link
               href="/"
               className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
@@ -61,18 +61,19 @@ export default function Header() {
             </Link>
             <Link
               href="/coflex"
-              className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hidden lg:block"
+              className="font-medium text-sm text-[#002d72] tracking-[0.35px] uppercase hover:text-[#0056FF] transition-colors"
             >
               Coflex
             </Link>
           </nav>
 
-          <div className="flex items-center space-x-3 sm:space-x-4">
-            {/* Mobile Menu Button */}
+          <div className="flex items-center space-x-3 sm:space-x-4 lg:hidden">
+            {/* Burger — mobile + tablet */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none"
+              className="flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none"
               aria-label="Toggle menu"
+              aria-expanded={mobileMenuOpen}
             >
               <span
                 className={`block w-6 h-0.5 bg-[#002D72] transition-all duration-300 ${
@@ -94,15 +95,15 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile / tablet menu */}
       <div
-        className={`md:hidden fixed top-14 sm:top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed top-14 sm:top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg transition-all duration-300 ease-in-out ${
           mobileMenuOpen
-            ? "max-h-screen opacity-100 visible"
+            ? "max-h-[calc(100vh-3.5rem)] sm:max-h-[calc(100vh-4rem)] opacity-100 visible overflow-y-auto"
             : "max-h-0 opacity-0 invisible overflow-hidden"
         }`}
       >
-        <nav className="px-4 py-4 space-y-1 max-w-7xl mx-auto">
+        <nav className="px-4 sm:px-6 py-4 space-y-1 max-w-7xl mx-auto">
           <Link
             href="/"
             onClick={() => setMobileMenuOpen(false)}

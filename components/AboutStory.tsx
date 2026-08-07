@@ -9,19 +9,8 @@ export default function AboutStory() {
         </h2>
 
         <div className="grid items-start gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12">
-          <div className="mt-14 max-w-2xl space-y-6 text-base text-justify font-normal leading-relaxed tracking-[-0.2px] text-white sm:text-lg lg:text-2xl">
-            <p>
-              Since our founding in 1989, Coflex has been a premier manufacturer
-              of world-class plumbing products focused on innovation that
-              delivers fast, efficient installation and maintenance. More than
-              15 years ago SnappyTrap All-in-One Drain Kit was developed to
-              improve ease-of-installation for all types of sinks. That&apos;s
-              why SnappyTrap is known as &ldquo;
-              <strong>The Right Fit Drain Kit.</strong>&rdquo;
-            </p>
-          </div>
-
-          <div className="mx-auto w-full max-w-[480px] lg:mx-0">
+          {/* Image first on mobile/tablet; text first on desktop */}
+          <div className="order-1 mx-auto w-full max-w-[480px] lg:order-2 lg:mx-0">
             <div className="relative h-[270px] overflow-hidden rounded-[28px] shadow-2xl sm:h-[340px] md:h-[400px] lg:h-[430px]">
               <Image
                 src="/images/about-us-1.png"
@@ -31,6 +20,18 @@ export default function AboutStory() {
                 sizes="(max-width: 768px) 92vw, (max-width: 1200px) 45vw, 420px"
               />
             </div>
+          </div>
+
+          <div className="order-2 mt-0 max-w-2xl space-y-6 text-base text-justify font-normal leading-relaxed tracking-[-0.2px] text-white sm:text-lg lg:order-1 lg:mt-14 lg:text-2xl">
+            <p>
+              Since our founding in 1989, Coflex has been a premier manufacturer
+              of world-class plumbing products focused on innovation that
+              delivers fast, efficient installation and maintenance. More than
+              15 years ago SnappyTrap All-in-One Drain Kit was developed to
+              improve ease-of-installation for all types of sinks. That&apos;s
+              why SnappyTrap is known as &ldquo;
+              <strong>The Right Fit Drain Kit.</strong>&rdquo;
+            </p>
           </div>
         </div>
 

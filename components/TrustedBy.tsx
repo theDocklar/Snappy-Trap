@@ -33,7 +33,7 @@ const benefits = [
 
 export default function TrustedBy() {
   return (
-    <section className="pt-12 pb-2 sm:pt-16 sm:pb-4 lg:pt-20 lg:pb-16 bg-[#043687] relative overflow-hidden">
+    <section className="pt-12 pb-12 sm:pt-16 sm:pb-14 lg:pt-20 lg:pb-16 bg-[#043687] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12 lg:mb-16">
           {/* Left Side - Takes 2/3 of width */}
@@ -49,8 +49,8 @@ export default function TrustedBy() {
               for any type of sink. Accommodates multiple wall connection types.
             </p>
 
-            <div className="-mt-4 sm:-mt-12 lg:-mt-16 -mb-8 sm:-mb-20 lg:-mb-24 w-full flex justify-center sm:justify-start">
-              <div className="w-[70%] sm:w-[70%] lg:w-[75%] -ml-0 sm:-ml-10 lg:-ml-15">
+            <div className="-mt-4 sm:-mt-8 lg:-mt-16 -mb-8 sm:-mb-12 lg:-mb-24 w-full flex justify-center lg:justify-start">
+              <div className="w-[70%] sm:w-[60%] lg:w-[75%] -ml-0 lg:-ml-15">
                 <Image
                   src="/images/snappy-red.png"
                   alt="SnappyTrap"
@@ -110,18 +110,18 @@ export default function TrustedBy() {
           </div>
         </div>
 
-        {/* Testimonials - Cascading/Overlapping Style */}
+        {/* Testimonials — stacked on mobile/tablet, cascading on desktop */}
         <div className="relative">
-          <div className="relative min-h-[560px] sm:min-h-[540px] md:min-h-[450px] lg:min-h-[400px]">
+          <div className="relative flex flex-col gap-4 sm:gap-5 lg:block lg:min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className={`bg-white/95 backdrop-blur-sm shadow-2xl border-0 transform hover:scale-105 transition-all duration-300 rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 absolute ${
+                className={`bg-white/95 backdrop-blur-sm shadow-2xl border-0 transform hover:scale-105 transition-all duration-300 rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 relative lg:absolute w-full sm:w-[90%] sm:mx-auto lg:mx-0 ${
                   index === 0
-                    ? "w-full sm:w-[90%] md:w-[45%] left-0 top-0 z-[30]"
+                    ? "lg:w-[45%] lg:left-0 lg:top-0 lg:z-[30]"
                     : index === 1
-                      ? "w-full sm:w-[88%] md:w-[42%] left-0 md:left-[38%] top-[190px] sm:top-[180px] md:top-[100px] z-[40]"
-                      : "w-full sm:w-[85%] md:w-[38%] left-0 md:left-[65%] top-[380px] sm:top-[360px] md:top-[200px] z-[50]"
+                      ? "lg:w-[42%] lg:left-[38%] lg:top-[100px] lg:z-[40]"
+                      : "lg:w-[38%] lg:left-[65%] lg:top-[200px] lg:z-[50]"
                 }`}
               >
                 <div className="flex items-start space-x-3 sm:space-x-4">

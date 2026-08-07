@@ -6,14 +6,14 @@ export default function HowItWorksProduct() {
   ];
 
   return (
-    <section className="bg-[#043687] py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#043687] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
           {/* Left Column - Product Image */}
           <div className="space-y-4">
             {/* Main Product Image */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="relative w-full h-[500px] lg:h-[600px] overflow-hidden rounded-xl">
+            <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
+              <div className="relative w-full h-[320px] sm:h-[400px] md:h-[450px] lg:h-[600px] overflow-hidden rounded-xl">
                 <img
                   src="/images/image9.png"
                   alt="SnappyTrap Universal Kitchen Drain Kit"
@@ -23,10 +23,10 @@ export default function HowItWorksProduct() {
             </div>
 
             {/* Thumbnail Images */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
               {thumbnails.map((thumb, idx) => (
-                <div key={idx} className="bg-white rounded-xl p-4 shadow-md">
-                  <div className="relative w-full h-[120px] rounded-lg overflow-hidden">
+                <div key={idx} className="bg-white rounded-xl p-2 sm:p-4 shadow-md">
+                  <div className="relative w-full h-[80px] sm:h-[100px] lg:h-[120px] rounded-lg overflow-hidden">
                     <img
                       src={thumb.src}
                       alt={thumb.alt}
@@ -39,9 +39,9 @@ export default function HowItWorksProduct() {
           </div>
 
           {/* Right Column - Product Details */}
-          <div className="space-y-6 text-white">
+          <div className="space-y-5 sm:space-y-6 text-white">
             {/* Product Title */}
-            <h1 className="font-black text-4xl lg:text-5xl text-white tracking-[-1.2px] uppercase">
+            <h1 className="font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white tracking-[-1.2px] uppercase leading-tight">
               SnappyTrap Universal Kitchen Drain Kit for Your Project
             </h1>
 
