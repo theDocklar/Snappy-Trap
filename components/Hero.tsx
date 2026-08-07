@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import SocialIcons from "./SocialIcons";
 import Link from "next/link";
-import { link } from "fs";
 
 export default function Hero() {
   const images = [
@@ -294,7 +293,7 @@ export default function Hero() {
 
             {/* Brand Slogan */}
             <div className="space-y-3 sm:space-y-4">
-              <h1 className="font-black mt-10 text-center text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white tracking-[-1.8px] leading-tight">
+              <h1 className="font-black mt-8 sm:mt-10 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-white tracking-[-1.8px] leading-tight">
                 Fast, Flexible,
                 <br />
                 Flawless Installation
@@ -307,8 +306,8 @@ export default function Hero() {
 
           {/* Right Side - Content */}
           <div className="order-2 lg:order-2 space-y-5 sm:space-y-6">
-            <div className="-mt-8 sm:-mt-10 lg:-mt-12 -mb-8 sm:-mb-10 lg:-mb-12 w-full flex justify-center">
-              <div className="w-[85%] lg:w-[90%]">
+            <div className="-mt-6 sm:-mt-8 lg:-mt-12 -mb-6 sm:-mb-8 lg:-mb-12 w-full flex justify-center">
+              <div className="w-[75%] sm:w-[70%] lg:w-[90%]">
                 <Image
                   src="/images/snappy-red.png"
                   alt="SnappyTrap"
@@ -320,7 +319,7 @@ export default function Hero() {
             </div>
 
             {/* Feature Pills — packaging benefit bullets */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl mx-auto lg:mx-0">
               <div className="flex items-center space-x-2 sm:space-x-3 sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4">
                 <div className="relative h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center flex-shrink-0">
                   <Image
@@ -408,7 +407,7 @@ export default function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
               <Link
                 href="/how-it-works"
                 className="bg-[#043687] hover:bg-[#0056FF] text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-bold rounded-xl sm:rounded-2xl tracking-wide uppercase text-center ring-1 ring-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.35),0_0_0_1px_rgba(255,255,255,0.08)_inset] hover:shadow-[0_16px_40px_rgba(0,0,0,0.45),0_0_0_1px_rgba(255,255,255,0.12)_inset] transform hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-300"

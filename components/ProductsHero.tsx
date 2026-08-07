@@ -59,12 +59,12 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
 
           {/* Featured Product Packaging */}
           <div className="mt-8 sm:mt-10 mb-2 sm:mb-4 max-w-5xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-2 lg:gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-3 items-center justify-items-center">
               {featuredProducts.map((product) => (
                 <Link
                   key={product.link}
                   href={product.link}
-                  className="group relative w-full sm:flex-1 min-w-0 max-w-[360px] transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
+                  className="group relative w-full min-w-0 max-w-[360px] transition-transform duration-300 hover:-translate-y-1 hover:scale-105 sm:last:col-span-2 lg:last:col-span-1"
                   aria-label={product.name}
                 >
                   <div className="relative w-full h-40 sm:h-52 md:h-56 lg:h-64">
