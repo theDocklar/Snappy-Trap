@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Hero() {
   const images = [
     {
-      src: "/images/hero2.jpg",
+      src: "/images/DK-110-Kitchen-Ambience.jpg",
       alt: "Kitchen",
       title: "Kitchens",
       link: "/products/dk-110",
@@ -20,6 +20,12 @@ export default function Hero() {
       link: "/how-it-works",
     },
     {
+      src: "/images/DK110-Kitchen-User-02.jpg",
+      alt: "Family Kitchen",
+      title: "Kitchens",
+      link: "/products/dk-110",
+    },
+    {
       src: "/images/DK110-Kitchen-Close Up.jpg",
       alt: "Kitchen",
       title: "Kitchens",
@@ -28,103 +34,103 @@ export default function Hero() {
     {
       src: "/images/DK110-Kitchen-Packaging.jpg",
       alt: "Kitchen",
-      title: "Packaging",
+      title: "Kitchens",
       link: "/products/dk-110",
     },
     {
       src: "/images/DK110-Kitchen-Close-Up-2.jpg",
       alt: "Video",
-      title: "Product Video",
+      title: "Kitchens",
       link: "/how-it-works",
     },
     {
       src: "/images/DK-100-Minibar-Ambience.jpg",
       alt: "Minibar",
-      title: "Minibar",
+      title: "Mini Bars",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Minibar-User.jpg",
       alt: "Minibar",
-      title: "Minibar",
+      title: "Mini Bars",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Minibar-Close Up.jpg",
       alt: "Minibar",
-      title: "Minibar",
+      title: "Mini Bars",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Minibar-Packaging.jpg",
       alt: "Minibar",
-      title: "Packaging",
+      title: "Mini Bars",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Minibar-Installation.jpg",
       alt: "Minibar",
-      title: "Minibar",
+      title: "Mini Bars",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Laundry-Ambience.jpg",
       alt: "Laundry",
-      title: "Laundry",
+      title: "Laundry Rooms",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Bathroom-User.jpg",
       alt: "Laundry",
-      title: "Laundry",
+      title: "Laundry Rooms",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Laundry-Close Up.jpg",
       alt: "Laundry",
-      title: "Laundry",
+      title: "Laundry Rooms",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Laundry-Packaging.jpg",
       alt: "Laundry",
-      title: "Packaging",
+      title: "Laundry Rooms",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-100-Laundry-Installation.jpg",
       alt: "Laundry",
-      title: "Packaging",
+      title: "Laundry Rooms",
       link: "/products/dk-100",
     },
     {
       src: "/images/DK-105-Bathroom-Ambience.jpg",
       alt: "Bathroom",
-      title: "Bathroom Sinks",
+      title: "Bathrooms",
       link: "/products/dk-105",
     },
     {
       src: "/images/DK-105-Bathroom-User.jpg",
       alt: "Bathroom",
-      title: "Bathroom Sinks",
+      title: "Bathrooms",
       link: "/products/dk-105",
     },
     {
       src: "/images/DK-105-Bathroom-Close Up.jpg",
       alt: "Bathroom",
-      title: "Bathroom Sinks",
+      title: "Bathrooms",
       link: "/products/dk-105",
     },
     {
       src: "/images/DK-105-Bathroom-Packaging.jpg",
       alt: "Bathroom",
-      title: "Bathroom Sinks",
+      title: "Bathrooms",
       link: "/products/dk-105",
     },
     {
       src: "/images/DK-105-Bathroom-Installation.jpg",
       alt: "Bathroom",
-      title: "Bathroom Sinks",
+      title: "Bathrooms",
       link: "/products/dk-105",
     },
 
@@ -198,7 +204,7 @@ export default function Hero() {
   };
 
   useEffect(() => {
-    const interval = setInterval(slide, 2000);
+    const interval = setInterval(slide, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -239,6 +245,7 @@ export default function Hero() {
                     alt={images[currentIndex].alt}
                     fill
                     className="object-cover"
+                    quality={60}
                     priority
                   />
                 </div>
@@ -253,6 +260,7 @@ export default function Hero() {
                     alt={images[nextIndex].alt}
                     fill
                     className="object-cover"
+                    quality={60}
                   />
                 </div>
               </div>

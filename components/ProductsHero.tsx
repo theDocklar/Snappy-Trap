@@ -10,17 +10,17 @@ type ProductsHeroProps = {
 const featuredProducts = [
   {
     name: "Bathroom Sink All-in-One Drain Kit",
-    image: "/images/dk105-front.png",
+    image: "/images/DK-105_Frontal.png",
     link: "/products/dk-105",
   },
   {
     name: "Single Bowl Kitchen Sink All-in-One Drain Kit",
-    image: "/images/dk100-front.png",
+    image: "/images/DK-100_Frontal.png",
     link: "/products/dk-100",
   },
   {
     name: "Double Bowl Kitchen Sink All-in-One Drain Kit",
-    image: "/images/dk110-front.png",
+    image: "/images/DK-110_Frontal.png",
     link: "/products/dk-110",
   },
 ];
@@ -30,12 +30,11 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
     <section className="bg-gradient-to-br from-[#002D72] via-[#003A8C] to-[#0056FF] py-16 sm:py-20 lg:py-28 pt-24 sm:pt-28 lg:pt-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] mb-4 sm:mb-6 leading-tight">
-            Find the Right SnappyTrap for Your Project
+          <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-[-1.8px] mb-8 sm:mb-10 lg:mb-12 leading-tight">
+            Find the Right SnappyTrap
+            <br />
+            For Your Project
           </h1>
-          <p className="font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100 tracking-[0.75px] mb-8 sm:mb-10 lg:mb-12 px-2">
-            Sink Drains Made Easy
-          </p>
 
           {/* Filter Buttons */}
           {/* <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-lg sm:max-w-none mx-auto px-2">
@@ -58,22 +57,23 @@ export default function ProductsHero({ onNavigate }: ProductsHeroProps) {
           </div> */}
 
           {/* Featured Product Packaging */}
-          <div className="mt-8 sm:mt-10 mb-2 sm:mb-4 max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-3 items-center justify-items-center">
+          <div className="mb-2 sm:mb-4 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 items-center justify-items-center">
               {featuredProducts.map((product) => (
                 <Link
                   key={product.link}
                   href={product.link}
-                  className="group relative w-full min-w-0 max-w-[360px] transition-transform duration-300 hover:-translate-y-1 hover:scale-105 sm:last:col-span-2 lg:last:col-span-1"
+                  className="group relative w-[180px] sm:w-[200px] md:w-[220px] lg:w-[240px] transition-transform duration-300 hover:-translate-y-1 hover:scale-105 sm:last:col-span-2 lg:last:col-span-1"
                   aria-label={product.name}
                 >
-                  <div className="relative w-full h-40 sm:h-52 md:h-56 lg:h-64">
+                  <div className="relative w-full aspect-[5/8]">
                     <Image
                       src={product.image}
                       alt={product.name}
                       fill
-                      sizes="(max-width: 640px) 200px, 360px"
+                      sizes="(max-width: 640px) 180px, (max-width: 1024px) 220px, 240px"
                       className="object-contain"
+                      quality={75}
                     />
                   </div>
                   <span className="pointer-events-none absolute inset-x-0 bottom-2 sm:bottom-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
